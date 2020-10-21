@@ -1,12 +1,9 @@
-# Stansberry-Research-Investor-Hour
 
 ## Getting Started
 
 ### Clone the repository
 
 ```bash
-git clone https://github.com/Stansberry-Holdings/Stansberry-Research-Investor-Hour.git
-cd Stansberry-Research-Investor-Hour
 ```
 
 ### Install the modules
