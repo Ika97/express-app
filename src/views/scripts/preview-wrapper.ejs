@@ -1,0 +1,10 @@
+<script>
+    (function ($) {
+        $(document).on('click', '.preview-wrapper__button', function (e) {
+            var $target = $(e.target),
+                $previewWrapper = $target.closest('.preview-wrapper');
+
+            $previewWrapper.toggleClass('preview-wrapper_expanded');
+        });
+    })(jQuery)
+</script>

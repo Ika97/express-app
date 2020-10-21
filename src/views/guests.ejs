@@ -1,0 +1,51 @@
+<%- include('./functions/index'); %>
+<html>
+<head>
+    <%- include('./partials/head', { meta: getMeta() }); %>
+</head>
+<body>
+<!-- Google Tag Manager -->
+<%- include('./scripts/gtm-body'); %>
+
+<!-- Header -->
+<%- include('./partials/header'); %>
+
+<!-- Core -->
+<div class="container-fluid contained" style="margin-top: 0px;">
+    <div class="row">
+        <div class="main col-md-12 col-lg-8">
+            <div class="text-content">
+                <div class="row">
+                    <h2 class="col-md-6 col-lg-4"><%- page.title %></h2>
+                    <!-- Top People Form -->
+                    <form id="peopleForm" class="col-md-6 col-lg-8" action="/guests" method="GET">
+                        <div class="form-group form-inline float-right col-lg-7">
+                            <label class="label-sm form-inline" for="peopleOrderBy">Sort by:</label>
+                            <select class="form-control col-lg-8 form-control-md" name="order" id="peopleOrderBy" type="text">
+                                <% Object.keys(sortOptions).forEach(function(key) { %>
+                                <option value="<%= key %>"<% if (query.order === key) { %> selected<% } %>><%- sortOptions[key] %></option>
+                                <% }) %>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <%- page.content %>
+                <p></p>
+            </div>
+            <%- include('./partials/people/list', { people: search.results }) %>
+            <div class="pagination-container">
+                <%- include('./partials/pagination', {currentPage: search.searchData.currentPage, totalPages: search.searchData.totalPages, basePath: search.searchData.baseUrl}); %>
+            </div>
+        </div>
+        <div class="sidebar col-md-12 col-lg-4">
+            <%- include('./partials/sidebar'); %>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<% include ./partials/footer %>
+<!-- People -->
+<% include ./scripts/people %>
+</body>
+</html>

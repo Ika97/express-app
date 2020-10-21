@@ -1,0 +1,21 @@
+.font-resizer {
+  text-align: center;
+  width: 36px;
+  letter-spacing: -1px;
+  color: #555555;
+  user-select: none;
+
+  &_icon {
+    display: inline-block;
+    font-style: normal;
+    cursor: pointer;
+
+    &_decrease {
+      font-size: 18px;
+    }
+
+    &_increase {
+      font-size: 28px;
+    }
+  }
+}

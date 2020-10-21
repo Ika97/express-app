@@ -1,0 +1,17 @@
+@import "../article/variables";
+
+.welcome-letter {
+  padding: 20px 22px;
+  background: linear-gradient(135deg, rgba(238,238,238,1) 0%, rgba(248,248,248,1) 49.83%, rgba(228,228,228,1) 100%);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+  color: $gray-9;
+
+  &__title {
+    font: 22px/26px "Proxima Nova W01";
+  }
+
+  &__content {
+    margin-top: 12px;
+    font: 15px/21px "Proxima Nova W01";
+  }
+}

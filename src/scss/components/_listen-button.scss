@@ -1,0 +1,25 @@
+.listen-button {
+  display: inline-block;
+  padding: 7px 15px 7px 9px;
+  border: 2px solid #F59122;
+  border-radius: 99999px;
+  color: #F59122;
+
+  &__text {
+    font: 700 14px/17px "Proxima Nova W01";
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+
+  i {
+    font-size: 19px;
+    vertical-align: middle;
+    margin-right: 7px;
+  }
+
+  &:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background: #F59122;
+  }
+}

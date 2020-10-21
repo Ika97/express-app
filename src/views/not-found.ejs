@@ -1,0 +1,27 @@
+<%- include('./functions/index'); %>
+<html>
+<head>
+    <%- include('./partials/head', { meta: getMeta() }); %>
+</head>
+<body>
+<!-- Header -->
+<%- include('./partials/header'); %>
+
+<!-- Core -->
+<div class="container-fluid contained">
+    <div class="row">
+        <div class="main col-md-12 col-lg-8" style="padding: 20px 30px 0px;">
+            <h2 style="font-weight: 600;">404 Not Found</h2>
+            <h3>Sorry, the page you are looking for does not exist.</h3>
+        </div>
+        <div class="sidebar col-md-12 col-lg-4">
+            <%- include('./partials/sidebar'); %>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<% include ./partials/footer %>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+@import "article/variables";
+
+.sidebar {
+  padding-top: 40px;
+
+  @media (max-width: 990px) {
+    padding-left: 20px;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding-top: 20px;
+  }
+
+  .section-wrapper{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .section-wrapper:first-child{
+    margin-top: 0;
+  }
+
+  .subscription-box {
+    background-color: #ffffff;
+
+
+    .card {
+      background-color: transparent;
+      border-width: 0;
+
+      .card-body{
+        padding: 0;
+      }
+
+      .card-title {
+        font-size: 22px;
+        font-weight: 700;
+        color: $gray-9;
+        line-height: 26px;
+        display: inline-block;
+
+        @include bp-max-large {
+          width: 85%;
+        }
+      }
+
+      .card-image {
+        width: 40px;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      p {
+        color: $gray-9;
+        line-height: 22px;
+        font-size: 16px;
+
+        @include bp-medium {
+          width: 90%;
+        }
+      }
+
+      button {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+      }
+    }
+  }
+
+  .premium-box {
+    margin-top: 14px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    border-top: 6px solid rgba(240, 131, 0, 1);
+
+    .card {
+
+      .card-body{
+        padding: 1.1rem 1.4rem;
+      }
+
+      div.card-title {
+        font-size: 20px;
+        color: rgba(240, 131, 0, 1);
+        line-height: 26px;
+
+        div:first-child{
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+
+        div:last-child{
+          margin-top: -2px;
+          font-style: italic;
+          font-weight: 700;
+          border-bottom: 1px solid rgba(240, 131, 0, 1);
+          padding-bottom: 6px;
+        }
+      }
+
+      div.card-title-sub {
+        font-size: 20px;
+        font-weight: 700;
+        color: rgba(0, 0, 0, 1);
+        line-height: 22px;
+      }
+
+      div.card-text {
+        margin: 10px 0;
+      }
+
+      p {
+        color: rgba(0, 0, 0, 1);
+        line-height: 20px;
+        font-size: 16px;
+      }
+
+      p.continue {
+        margin-bottom: 0px;
+      }
+
+      background-color: transparent;
+      border-width: 0;
+    }
+  }
+}

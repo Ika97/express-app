@@ -1,0 +1,17 @@
+<script type="text/javascript">
+var oas_tag = oas_tag || {};
+oas_tag.url = 'oasc05131.247realmedia.com'; //Define OAS URL
+oas_tag.sizes = function () { //size is required [width, height]
+    oas_tag.definePos('x95', [300,250]);
+};
+oas_tag.site_page = 'investorhour'; //Define OAS Site page
+    (function() {
+        oas_tag.version ='1'; oas_tag.loadAd = oas_tag.loadAd || function(){};
+        var oas = document.createElement('script'),
+            protocol = 'https:' == document.location.protocol?'https://':'http://',
+            node = document.getElementsByTagName('script')[0];
+        oas.type = 'text/javascript'; oas.async = true;
+        oas.src = protocol + oas_tag.url + '/om/' + oas_tag.version + '.js';
+        node.parentNode.insertBefore(oas, node);
+    })();
+</script>

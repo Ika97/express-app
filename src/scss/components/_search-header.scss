@@ -1,0 +1,75 @@
+@import '../common/fonts';
+
+.search-header {
+  position: relative;
+
+  &__query {
+    float: right;
+    background: transparent;
+    border: 0 none;
+    color: #ffffff;
+    padding-right: 30px;
+    width: 90px;
+
+    &::-webkit-input-placeholder,
+    &::-moz-placeholder,
+    &:-ms-input-placeholder,
+    &:-moz-placeholder {
+      font-family: $font-lightbold-family;
+      font-weight: $font-lightbold-weight;
+      color: #ffffff;
+      opacity: 1;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__action {
+    position: absolute;
+    cursor: pointer;
+    background: transparent;
+    border: 0 none;
+    color: #ffffff;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 5px;
+
+    &_submit {
+      display: block;
+    }
+
+    &_clear {
+      display: none;
+      font-size: 8px;
+    }
+  }
+
+  &_expanded {
+    .search-header {
+      &__query {
+        width: 100%;
+
+        &::-webkit-input-placeholder,
+        &::-moz-placeholder,
+        &:-ms-input-placeholder,
+        &:-moz-placeholder {
+          font-family: $font-semibold-family;
+          font-weight: $font-semibold-weight;
+        }
+      }
+
+      &__action {
+        &_submit {
+          display: none;
+        }
+
+        &_clear {
+          display: block;
+        }
+      }
+    }
+  }
+}

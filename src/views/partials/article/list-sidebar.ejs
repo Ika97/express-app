@@ -1,0 +1,8 @@
+<div class="section-wrapper">
+    <div class="article-list">
+        <div class="list-title"><%- title %></div>
+        <% articles.forEach(function(article) { %>
+            <%- include('./item-sidebar', { itemType: listType, article: article }); %>
+        <% }) %>
+    </div>
+</div>

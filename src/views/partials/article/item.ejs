@@ -1,0 +1,15 @@
+<div class="article-item">
+    <a href="/episodes/<%- article.slug %>/" class="article-title"><%- article.title %></a>
+    <% if(article.people) { %>
+        <div class="article-byline">
+            <span class="marker"></span>
+            By <span class="author"><%- article.people[0] %></span>
+            <span class="date"><%= article.createdAtMoment.format('dddd, MMMM D, YYYY'); %></span>
+        </div>
+    <% } else { %>
+        <div>NO PEOPLE</div>
+    <% } %>
+    <div class="article-excerpt">
+        <p><%- article.excerpt %></p>
+    </div>
+</div>

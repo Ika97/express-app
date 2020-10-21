@@ -1,0 +1,18 @@
+.orange-link {
+  color: #F59122;
+  text-decoration: none;
+
+  &:active,
+  &:hover,
+  &:link {
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: darken(#F59122, 10);
+  }
+
+  &:active {
+    color: darken(#F59122, 20);
+  }
+}

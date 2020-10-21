@@ -1,0 +1,37 @@
+.pagination-container {
+  width: 60%;
+  margin: 0 auto;
+}
+.pagination {
+  li {
+    margin: 5px;
+    font-weight: 800;
+    &.first {
+      display: none;
+    }
+    &.last {
+      display: none;
+    }
+    &.next {
+      a {
+        color: #F59122;
+        &:hover{
+          color:#fff;
+          .icon-chevron-right{
+            -webkit-text-stroke: 2px  #f7CA99;
+          }
+        }
+      }
+      &.disabled{
+        .icon-chevron-right{
+          -webkit-text-stroke: 2px  #adb5bd;
+        }
+      }
+    }
+    .icon-chevron-right{
+      -webkit-text-stroke: 2px #eee;
+      position: relative;
+      top:2px;
+    }
+  }
+}

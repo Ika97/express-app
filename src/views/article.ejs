@@ -1,0 +1,52 @@
+<%- include('./functions/index'); %>
+<html>
+<head>
+    <%- include('./partials/head', { meta: getMeta() }); %>
+    <%- include('./partials/structured-data', { page: page }); %>
+    <%- include('./scripts/iframe-size'); %>
+</head>
+<body class="page">
+
+<!-- Google Tag Manager -->
+<%- include('./scripts/gtm-body'); %>
+<%- include('./partials/header', { activeNav: options.activeNav }); %>
+
+<% if(page.article.hasCategory('episode')) { %>
+<div class="page__episode-bar episode-bar">
+    <div class="container-fluid contained clearfix episode-bar__content-wrapper">
+        <div class="episode-bar__number-label clearfix">
+            <span class="episode-bar__number-label-title">Episode</span>
+            <span class="episode-bar__number-label-number"><%= page.article.episodeNumber %></span>
+        </div>
+        <% if(page.article.mappedPeople && page.article.mappedPeople.length > 0) { %>
+            <div class="episode-bar__content">
+                FEATURED GUESTS: <%- page.article.mappedPeople.map(person => person.name).join(', ') %>
+            </div>
+        <% } %>
+    </div>
+</div>
+<% } %>
+
+<div class="page__content-wrapper">
+    <div class="page__share-container">
+        <div class="page__share page__share_desktop sticky">
+            <%- include('./partials/article/social-share', { article: page.article, orientation: 'vertical' }); %>
+        </div>
+    </div>
+    <div class="container-fluid contained">
+        <div class="row">
+            <div class="main main-article col-md-12 col-lg-8">
+                <%- include('./partials/article/full', { article: page.article, nextEpisode: page.nextEpisode }); %>
+            </div>
+            <div class="sidebar col-md-12 col-lg-4">
+                <%- include('./partials/sidebar'); %>
+            </div>
+        </div>
+    </div>
+</div>
+
+<% include ./partials/footer %>
+<% include ./scripts/font-resizer %>
+<% include ./scripts/preview-wrapper %>
+</body>
+</html>

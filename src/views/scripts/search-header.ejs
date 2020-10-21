@@ -1,0 +1,58 @@
+<script>
+    (function($) {
+        $(document).on('focus', '.search-header__query', function(e) {
+            var $searchHeader = $(e.target).closest('.search-header'),
+                $query = $(e.target).closest('.search-header__query'),
+                isExpanded = $searchHeader.hasClass('search-header_expanded');
+
+            if (!isExpanded) {
+                expandSearchHeader($searchHeader);
+            }
+        })
+
+        $(document).on('blur', '.search-header__query', function(e) {
+            var $searchHeader = $(e.target).closest('.search-header'),
+                $query = $(e.target).closest('.search-header__query'),
+                isExpanded = $searchHeader.hasClass('search-header_expanded');
+
+            if ($query.val().length === 0) {
+                collapseSearchHeader($searchHeader);
+            }
+        })
+
+        $(document).on('click', '.search-header__action_clear', function(e) {
+            var $searchHeader = $(e.target).closest('.search-header'),
+                $query = $searchHeader.find('.search-header__query');
+
+            $query.val('');
+            collapseSearchHeader($searchHeader);
+        })
+
+        function expandSearchHeader($searchHeader) {
+            var $query = $searchHeader.find('.search-header__query'),
+                isExpanded = $searchHeader.hasClass('search-header_expanded');
+
+            $searchHeader.addClass('search-header_expanded');
+            $query.attr('placeholder', 'What are you looking for?');
+        }
+
+        function collapseSearchHeader($searchHeader) {
+            var $query = $searchHeader.find('.search-header__query'),
+                isExpanded = $searchHeader.hasClass('search-header_expanded');
+
+            $searchHeader.removeClass('search-header_expanded');
+            $query.attr('placeholder', 'Search');
+        }
+
+        $(document).ready(function() {
+            $('.search-header').each(function() {
+                var $searchHeader = $(this),
+                    $query = $searchHeader.find('.search-header__query');
+
+                if ($query.val().length !== 0) {
+                    expandSearchHeader($searchHeader);
+                }
+            });
+        });
+    })(jQuery)
+</script>

@@ -1,0 +1,18 @@
+.episode-archive-header {
+  &__title {
+    font-family: $font-bold-family;
+    font-weight: $font-bold-weight;
+    letter-spacing: .5px;
+    font-size: 28px;
+    line-height: 1.14;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    font-family: $font-regular-family;
+    font-weight: $font-regular-weight;
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}

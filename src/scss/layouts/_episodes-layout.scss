@@ -1,0 +1,21 @@
+.episodes-layout {
+  &__header {
+    margin-bottom: 30px;
+  }
+
+  &__search-panel {
+    margin-bottom: 50px;
+
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 25px;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__archive {
+
+  }
+}

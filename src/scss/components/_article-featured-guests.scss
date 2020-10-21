@@ -1,0 +1,9 @@
+.article-featured-guests {
+  &__guest {
+    margin-top: (32 / 18) * 1em;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}

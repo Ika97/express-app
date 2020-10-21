@@ -1,0 +1,7 @@
+<div class="episode-archive">
+    <% articles.forEach(function (episode) { %>
+        <div class="episode-archive__single-episode">
+            <%- include('./single-episode', { episode: episode }); %>
+        </div>
+    <% }) %>
+</div>

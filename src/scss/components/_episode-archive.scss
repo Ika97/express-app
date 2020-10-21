@@ -1,0 +1,22 @@
+@import '../article/variables';
+
+.episode-archive {
+  &__single-episode {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 36px;
+    padding-bottom: 36px;
+    box-shadow: inset 0 -1px 0 0 $gray-41;
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 18px;
+      padding-bottom: 18px;
+    }
+
+    &:last-child {
+      box-shadow: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+}

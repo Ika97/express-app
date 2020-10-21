@@ -1,0 +1,23 @@
+.homepage {
+  padding-top: 48px;
+  padding-bottom: 90px;
+
+  &__button {
+    color: #F59122;
+    font: 700 15px/20px "Proxima Nova W01";
+    text-transform: uppercase;
+    padding: 9px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.05), 0 1px 4px 0 rgba(0,0,0,0.25);
+
+    &-icon {
+      vertical-align: -3px;
+      font-size: 19px;
+      margin-left: 10px;
+    }
+
+    &:hover {
+      color: #F59122;
+      text-decoration: none;
+    }
+  }
+}

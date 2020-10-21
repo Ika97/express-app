@@ -1,0 +1,43 @@
+@import "../common/fonts";
+
+.article-featured-guest {
+  &__shot {
+    max-width: 198px;
+
+    @include media-breakpoint-down(xs) {
+      display: block;
+      margin: 0 auto 20px;
+    }
+  }
+
+  &__info {
+    padding-left: 7px;
+
+    @include media-breakpoint-down(xs) {
+      padding-left: 0;
+    }
+  }
+
+  &__name {
+    font-size: (24 / 18) * 1em;
+    line-height: (28 / 24) * 1em;
+    font-family: $font-bold-family;
+    font-weight: $font-bold-weight;
+    margin-bottom: (8 / 24) * 1em;
+  }
+
+  &__description {
+    font-size: (16 / 18) * 1em;
+    line-height: (24 / 16) * 1em;
+    font-family: $font-regular-family;
+    font-weight: $font-regular-weight;
+    margin-bottom: (8 / 16) * 1em;
+  }
+
+  &__cta {
+    font-family: $font-bold-family;
+    font-weight: $font-bold-weight;
+    font-size: (15 / 18) * 1em;
+    line-height: (20 / 15) * 1em;
+  }
+}

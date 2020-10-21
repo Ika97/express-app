@@ -1,0 +1,11 @@
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            var iFrames = $('iframe');
+
+            if (iFrames[0].height / iFrames[0].width === 9 / 16) {
+                iFrames[0].parentElement.className = "player-embed";
+            }
+        });
+    })(jQuery)
+</script>

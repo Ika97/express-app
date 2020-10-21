@@ -1,0 +1,72 @@
+.single-episode {
+  &__meta {
+    margin-bottom: 8px;
+  }
+
+  &__number {
+    height: 27px;
+    background-color: #e62818;
+    font: 900 15px/15px "Orbitron";
+    letter-spacing: 2.6px;
+    padding: 4px 11px;
+    text-transform: uppercase;
+    color: $white;
+    margin-right: 5px;
+    float: left;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, .45);
+    line-height: 20px;
+  }
+
+  &__date {
+    font: 500 15px/18px "Proxima Nova W01";
+    letter-spacing: .3px;
+    margin: 5px 0;
+    float: left;
+  }
+
+  &__title {
+    margin-top: 8px;
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 20px;
+    font: 800 28px/30px "Proxima Nova W01";
+    color: inherit;
+
+    &:hover {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+
+  &__link {
+    color: inherit;
+
+    &:hover {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+
+  &__heading {
+    display: table;
+    width: 100%;
+  }
+
+  &__button {
+    display: table-cell;
+    width: 140px;
+    vertical-align: middle;
+
+    @include media-breakpoint-down(xs) {
+      display: none;
+    }
+  }
+
+  &__featuring {
+    font: 700 17px/19px "Proxima Nova W01";
+    margin-top: 5px;
+    font-style: italic;
+    float: left;
+    display: inline-block;
+  }
+}

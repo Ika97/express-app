@@ -1,0 +1,309 @@
+.header-wrapper {
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+
+  .top-header {
+    padding: 0;
+    height: 100%;
+  }
+
+  .main-header{
+    height: 172px;
+    margin-bottom: 0;
+    background: url(/assets/images/backgrounds/header-background.jpg);
+    background-size: cover;
+    position: relative;
+
+    .sih-logo{
+      height: 140px !important;
+      max-height: 140px !important;
+    }
+
+    .hosts-logo {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 172px;
+      width: auto;
+
+      @include media-breakpoint-down(lg) {
+        display: none;
+      }
+
+      &_mobile {
+        display: none;
+
+        @include media-breakpoint-down(lg) {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .sub-header{
+    background-color: #111111;
+    color: #ffffff !important;
+    font-size: 17px;
+    font-weight: 600;
+    height: 48px;
+    vertical-align: middle;
+
+    .navbar {
+      padding: 0;
+
+      .nav-item .nav-link{
+        color: #ffffff;
+        text-transform: uppercase;
+        padding: 12px 30px 12px 0;
+
+        &.active, &:hover{
+          cursor: pointer;
+          color: rgba(255,255,255,0.7);
+          transition: color .2s ease-in-out;
+        }
+
+        &.alternate{
+          font-size: 14px;
+          font-weight: 700;
+          cursor: pointer;
+          background-color: #ec8326;
+          &:hover{
+            cursor: pointer;
+            background-color: #eb8d3b;
+          }
+        }
+      }
+    }
+
+    .search-header {
+      margin: auto 0;
+      max-width: 550px;
+      flex: 1;
+    }
+  }
+}
+
+.header-alternate-wrapper {
+  .sub-header{
+    background-color: #111111;
+    color: #ffffff !important;
+    font: 600 17px "Proxima Nova W01";
+    height: 48px;
+    box-shadow: inset 0 -1px 0 0 #aaa;
+    vertical-align: middle;
+
+    .sih-logo-postscroll {
+      height: 34px !important;
+      max-height: 34px !important;
+    }
+
+    .navbar-brand {
+      margin-right: 2rem;
+    }
+
+    .navbar {
+      padding: 0;
+
+      .nav-item .nav-link{
+        color: #ffffff;
+        text-transform: uppercase;
+
+        &.active, &:hover{
+          cursor: pointer;
+          color: rgba(255,255,255,0.7);
+          transition: color .2s ease-in-out;
+        }
+
+        &.alternate{
+          font-size: 14px;
+          font-weight: 700;
+          cursor: pointer;
+          background-color: #ec8326;
+          &:hover{
+            cursor: pointer;
+            background-color: #eb8d3b;
+          }
+        }
+      }
+    }
+
+    .search-header {
+      color: #ffffff;
+      text-decoration: none;
+
+      &__text {
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+.header-alternate-spacer{
+  display:none;
+}
+
+.form-control.search-input{
+
+  &.form-control-sm{
+    width: auto;
+    max-width: 230px;
+    max-height: 36px;
+    padding: 4px;
+  }
+}
+.header-alternate-wrapper {
+  position: fixed;
+  top: -140px;
+
+  &.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    .search-header {
+      margin: auto 0 auto auto;
+      max-width: 550px;
+      flex: 1;
+    }
+
+    &.headroom--top{
+      top: -140px;
+      &.headroom--unpinned {
+        top: -140px;
+      }
+    }
+
+    &.headroom--not-top{
+      top: 0;
+      &.headroom--unpinned {
+        top: 0;
+      }
+      &.headroom--pinned {
+        top: 0;
+      }
+    }
+
+  }
+}
+
+.show-xs {
+  display: none;
+}
+
+.nav-toggle-menu {
+  background: none;
+  border: 0 none;
+
+  i {
+    font-size: 23px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .show-xs {
+    display: block;
+  }
+
+  .hide-xs {
+    display: none;
+  }
+
+  .toggle-xs {
+    display: none;
+    &.toggle-xs-on {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-content: stretch;
+      align-items: flex-start;
+    }
+  }
+
+  .header-alternate-spacer{
+    background-color: #13558e;
+    display: block;
+    height: 48px;
+  }
+  .header-alternate-wrapper {
+    background-color: #111111;
+    top: 0;
+
+    &.headroom {
+      &.headroom--top{
+        top: 0;
+        &.headroom--unpinned {
+          top: 0;
+        }
+      }
+    }
+
+    .sub-header .navbar .hide-on-sm{
+      display: none;
+    }
+  }
+
+  .navbar-nav.alternate-nav{
+    background-color: #111111;
+  }
+
+  .navbar-nav.navbar-side {
+    padding: 46px 0 0;
+    background-color: #111111;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+    margin-right: 0 !important;
+    max-height: 100vh;
+
+    ul.navbar-nav {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-content: stretch;
+      align-items: flex-start;
+      overflow-y: scroll;
+
+      .nav-item {
+        align-self: stretch;
+
+        a.nav-link{
+          display: block;
+          width: 100%;
+          height: 100%;
+          padding: 6px 24px;
+          line-height: 36px;
+          font-size: 18px;
+          font-weight: 600;
+          color: #ffffff;
+          text-transform: uppercase;
+          border-top: 1px solid black;
+          border-bottom: 1px solid black;
+
+          &.active, &:hover{
+            cursor: pointer;
+            background-color: #222222;
+          }
+
+          &.alternate{
+            font-weight: 700;
+            cursor: pointer;
+            background-color: #ec8326;
+            &:hover{
+              cursor: pointer;
+              background-color: #eb8d3b;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+@import '../common/_variables';
+
+@mixin bp-large {
+    @media only screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin bp-max-large {
+    @media only screen and (max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin bp-min-medium-limit {
+    @media only screen and (min-width: 1025px) and (max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin bp-min-medium {
+    @media only screen and (min-width: 1025px) {
+        @content;
+    }
+}
+
+@mixin bp-medium {
+    @media only screen and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin bp-medium-print {
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin bp-prexsmall {
+    @media only screen and (max-width: 480px) {
+        @content;
+    }
+}
+
+@mixin bp-small {
+    @media only screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin bp-min-small {
+    @media only screen and (min-width: 769px) {
+        @content;
+    }
+}
+
+@mixin bp-xsmall {
+    @media only screen and (max-width: 375px) {
+        @content;
+    }
+}
+
+@mixin bp-limited-height-desktop {
+    @media only screen and (min-width: 1025px) and (min-height: $min-desktop-height-to-fix-heading-box) {
+        @content;
+    }
+}
+
+@mixin bp-limited-height-medium {
+    @media only screen and (max-width: 1024px) and (min-height: $min-mobile-height-to-fix-heading-box) {
+        @content;
+    }
+}
+
+@mixin bp-height-small {
+    @media only screen and (max-height: 399px) {
+        @content;
+    }
+}

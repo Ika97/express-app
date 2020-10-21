@@ -1,0 +1,30 @@
+.search-form{
+
+}
+
+.search-totals{
+  border-bottom: 1px solid #CCCCCC;
+  margin-bottom: 40px;
+
+  @include media-breakpoint-down(md) {
+    margin-bottom: 20px;
+  }
+}
+
+.search-results{
+  font-size: 22px;
+
+  .article-list a.article-title {
+    color: #00559F;
+    font-size: 1.05em;
+    font-weight: 500;
+  }
+}
+
+.search-pagination{
+  margin-top: 40px;
+
+  @include media-breakpoint-down(md) {
+    margin-top: 20px;
+  }
+}

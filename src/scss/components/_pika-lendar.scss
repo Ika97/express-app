@@ -1,0 +1,92 @@
+@import '../common/fonts';
+
+.pika-lendar {
+  width: 286px;
+  margin: 0;
+  padding: 17px 24px 24px;
+
+  .pika-table {
+    th {
+      padding-bottom: 2px;
+
+      abbr {
+        text-decoration: none;
+      }
+    }
+
+    td {
+      border: 1px solid #cccccc;
+
+      &.is-selected {
+        border: 1px double #0079E3;
+
+        &.is-disabled,
+        &.is-outside-current-month {
+          border: 1px double transparentize(#0079E3, .7);
+        }
+
+        .pika-button {
+          background-color: #0079E3;
+          color: #ffffff;
+          border-radius: 0;
+        }
+      }
+    }
+  }
+
+  .pika-title {
+    margin-bottom: 8px;
+  }
+
+  .pika-button {
+    background: transparent;
+    font-family: $font-lightbold-family;
+    font-weight: $font-lightbold-weight;
+    font-size: 14px;
+    line-height: 19px;
+    color: #111111;
+    padding: 6px 8px 8px 8px;
+    text-align: center;
+
+    &:hover {
+      background: #cccccc;
+      color: #111111;
+      box-shadow: none;
+      border-radius: 0;
+    }
+  }
+
+  .pika-next,
+  .pika-prev {
+    background: none;
+    width: auto;
+    height: 28px;
+    text-indent: 0;
+
+    i {
+      pointer-events: none;
+    }
+  }
+
+  .pika-next {
+    padding-right: 13px;
+  }
+
+  .pika-prev {
+    padding-left: 13px;
+  }
+
+  .picker-nav-icon {
+    font-size: 22px;
+  }
+}
+
+.pika-single {
+  @include media-breakpoint-down(md) {
+    position: fixed !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    top: 20px !important;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.05), 0 1px 6px 0 rgba(0,0,0,0.25) !important;
+  }
+}

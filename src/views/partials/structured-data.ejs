@@ -1,0 +1,31 @@
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://investorhour.com<%= page.url %>"
+  },
+  "image": [],
+  "headline": "<%= page.meta.title %>",
+  "datePublished": "<%= page.article.createdAtMoment.format('YYYY-MM-DD'); %>",
+  "dateModified": "<%= page.article.createdAtMoment.format('YYYY-MM-DD'); %>",
+  "author": [{
+    "@type": "Person",
+    "name": "Porter Stansberry"
+  },{
+    "@type": "Person",
+    "name": "Buck Sexton"
+  }],
+  "publisher": {
+     "name": "InvestorHour",
+     "@type": "Organization",
+     "logo": {
+        "@type": "ImageObject",
+        "url": "http://investorhour.com/assets/images/logo.png"
+     }
+  },
+  "description": "<%= page.meta.description %>",
+  "isAccessibleForFree": "True"
+}
+</script>

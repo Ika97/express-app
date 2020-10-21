@@ -1,0 +1,68 @@
+#modal-subscribe{
+  background-color: rgba(255,255,255,.65);
+
+  .modal-content{
+    background-color: #174469;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    .subscription-box{
+      float: left;
+      max-width: 400px;
+      .card{
+        background-color: transparent;
+        border: 0px solid transparent;
+        color: #ffffff;
+
+        .card-body {
+          .card-title{
+            font-size: 35px;
+            font-weight: 700;
+          }
+          .card-text{
+            font-size: 18px;
+            line-height: 22px;
+          }
+          .card-image {
+            width: 40px;
+          }
+        }
+      }
+    }
+    
+    .bio-image{
+      height: 60px;
+      width: 60px;
+      float:  left;
+      margin-right: 10px;
+      background-image: url('http://secure.stansberryresearch.com/wp-content/uploads/sites/2/2017/12/steve-sjuggerud-500-square_5a328ad16942b.jpg');
+      background-size: contain;
+    }
+
+    button.modal-close {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      z-index: 1000;
+      background-color: transparent;
+      color: #FFFFFF;
+      border: 0px solid transparent;
+      font-size: 40px;
+      line-height: 40px;
+      padding:10px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    .modal-header{
+      border-bottom: 0px;
+      
+    }
+
+    .modal-footer{
+      border-top: 0px;
+    }
+    
+  }
+}

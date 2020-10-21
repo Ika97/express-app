@@ -1,0 +1,168 @@
+<%- include("./functions/index"); %>
+<html>
+<head>
+    <%- include("./partials/head", { meta: getMeta() }); %>
+    <script src="/assets/js/moment.min.js "></script>
+    <script src="/assets/js/pikaday.min.js "></script>
+</head>
+<body>
+<!-- Google Tag Manager -->
+<%- include("./scripts/gtm-body"); %>
+
+<!-- Header -->
+<%- include("./partials/header"); %>
+
+<!-- Core -->
+<div class="container-fluid contained episodes-layout" style="margin-top: 0px;">
+    <div class="row">
+        <div class="main col-md-12 col-lg-8">
+            <div class="episode-archive-header episodes-layout__header">
+                <h1 class="episode-archive-header__title">Episode Archive</h1>
+                <p class="episode-archive-header__subtitle">To filter and sort episodes, use the options below.</p>
+            </div>
+            <form class="archiveForm search-panel episodes-layout__search-panel">
+                <div class="search-panel__title">Date Range</div>
+                <div class="form-inline">
+                    <div class="search-panel__dates">
+                        <div class="form-group">
+                            <label class="mr-2 form-label" for="fromDate">From:</label>
+                            <div class="inner-addon right-addon">
+                                <i class="far icon-calendar-2"></i>
+                                <input id="fromDate"
+                                       name="fromDate"
+                                       type="text"
+                                       class="form-control search-panel__date"
+                                       placeholder="MM/DD/YYYY"
+                                       aria-label="Use the arrow keys to pick a date"
+                                    <% if (archive.query.dateFrom !== undefined) { %>
+                                       value="<%= archive.query.dateFrom.format("MM/DD/YYYY") %>"
+                                    <% } %>
+                                />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="ml-sm-3 ml-0 mr-2 form-label" for="toDate">To:</label>
+                            <div class="inner-addon right-addon">
+                                <i class="far icon-calendar-2"></i>
+                                <input id="toDate"
+                                       name="toDate"
+                                       type="text"
+                                       class="form-control search-panel__date"
+                                       placeholder="MM/DD/YYYY"
+                                       aria-label="Use the arrow keys to pick a date"
+                                    <% if (archive.query.dateTo !== undefined) { %>
+                                       value="<%= archive.query.dateTo.format("MM/DD/YYYY") %>"
+                                    <% } %>
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-panel__controls">
+                        <div class="form-group">
+                            <a class="ml-1 mr-4 reset" href="/episodes">
+                                <i class="icon-undo"></i>
+                                <span class="reset-label">Reset Filters</span>
+                            </a>
+                        </div>
+                        <div class="form-group">
+                            <label class="switch mr-2">
+                                <input id="toggleListView" type="checkbox" class="chk-list-view" value="on">
+                                <span class="slider round"></span>
+                            </label>
+                            <label for="toggleListView" class="switch-label">Show List View</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div <% if (!archive.query.haveCriteria) {%> style="display: none"<% } %>>
+                <% if (archive.totalCount > 0) { %>
+                    <div class="episodes-layout__archive">
+                        <div class="non-list-view">
+                            <%- include('./partials/article/list-full', { articles: archive.results, showArchive: false }); %>
+                        </div>
+                        <div class="list-view" style="display: none">
+                            <%- include('./partials/article/list-compact', { articles: archive.results }); %>
+                        </div>
+                    </div>
+                    <div class="search-pagination">
+                        <%- include('./partials/pagination', {currentPage: archive.searchData.currentPage, totalPages: archive.searchData.totalPages, basePath: archive.searchData.baseUrl}); %>
+                    </div>
+                <% } else { %>
+                    <div>No results found. Try refining your search</div>
+                <% } %>
+            </div>
+        </div>
+        <div class="sidebar col-md-12 col-lg-4">
+            <%- include("./partials/sidebar"); %>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<% include ./partials/footer %>
+<!-- End Footer -->
+
+<% include ./scripts/view-toggle.ejs %>
+
+<!-- Search -->
+<script>
+    (function($) {
+        $(document).ready(function() {
+            var $fromDate = $("#fromDate"),
+                $toDate = $("#toDate"),
+                page = <%= archive.searchData.currentPage %>,
+                location = "/episodes",
+                dateFormat = "MM/DD/YYYY",
+                datepickeri18n = {
+                    previousMonth : '<i class="picker-nav-icon icon-angle-left"></i>',
+                    nextMonth     : '<i class="picker-nav-icon icon-angle-right"></i>',
+                    months        : ['January','February','March','April','May','June','July','August','September','October','November','December'],
+                    weekdays      : ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
+                    weekdaysShort : ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+                };
+
+            var filterFromDate = new Pikaday({
+                field: $fromDate[0],
+                format: dateFormat,
+                i18n: datepickeri18n,
+                showDaysInNextAndPreviousMonths: true,
+            });
+            var filterToDate = new Pikaday({
+                field: $toDate[0],
+                format: dateFormat,
+                i18n: datepickeri18n,
+                showDaysInNextAndPreviousMonths: true,
+            });
+
+            var buildQuery = function () {
+                var fromValue = $fromDate.val(),
+                    toValue = $toDate.val()
+                    query = "";
+
+                if (fromValue) {
+                    query += "from=" + encodeURIComponent(fromValue);
+                }
+
+                if (fromValue && toValue) {
+                    query += "&"
+                }
+
+                if (toValue) {
+                    query += "to=" + encodeURIComponent(toValue);
+                }
+
+                if (query.length > 0) {
+                    window.location = location + "?" + query + "&page=" + page;
+                } else {
+                    window.location = location + "?page=" + page;
+                }
+            };
+
+            $fromDate.on("change", buildQuery);
+            $toDate.on("change", buildQuery);
+        })
+    })(jQuery)
+</script>
+<!-- End Search -->
+</body>
+</html>

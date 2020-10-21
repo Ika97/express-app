@@ -1,0 +1,135 @@
+$switch-inner-width:    36px;
+$switch-inner-padding:  2px;
+$switch-toggle-width:   16px;
+$switch-inner-height:  $switch-inner-padding * 2 + $switch-toggle-width;
+$switch-toggle-range: ($switch-inner-width - $switch-toggle-width - ($switch-inner-padding * 2));
+
+.switch-label {
+  cursor: pointer;
+  vertical-align: top;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  color: #17568c;
+}
+
+.reset-label {
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 20px;
+  color: #17568c;
+}
+
+.reset {
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 20px;
+  color: #17568c;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: $switch-inner-width;
+  height: $switch-inner-height;
+  margin-bottom: .0rem;
+
+  input {display:none;}
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #aaaaaa;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: $switch-toggle-width;
+    width: $switch-toggle-width;
+    left: $switch-inner-padding;
+    bottom: $switch-inner-padding;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px #17568c;
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX($switch-toggle-range);
+    -ms-transform: translateX($switch-toggle-range);
+    transform: translateX($switch-toggle-range);
+  }
+
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  input:checked + .slider {
+    background-color: #17568c;
+  }
+}
+
+// Form input Icon
+.inner-addon {
+  position: relative;
+
+  .far {
+    font-size: 1.2rem;
+    position: absolute;
+    padding: 11px 10px 10px;
+    pointer-events: none;
+    color: #999999;
+  }
+
+  &.left-addon {
+    .far  { left:  .3rem;}
+    input  { padding-left:  36px; }
+  }
+  &.right-addon {
+    .far  { right:  .3rem;}
+    input { padding-right: 36px; }
+  }
+
+  &.inner-addon-lg{
+    .far {
+      font-size: 1.2em;
+      padding: 12px 10px 10px;
+    }
+
+    &.left-addon {
+      .far  { left:  0px;}
+      input  { padding-left:  38px; }
+    }
+    &.right-addon {
+      .far  { right:  0px;}
+      input { padding-right: 38px; }
+    }
+  }
+}
+
+label {
+  &.label-sm {
+    font-size: 13px;
+    margin: 0 10px 0 0;
+    font-weight: 600;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* align button at bottom */
+.vertical-align-bottom { vertical-align: bottom !important; }

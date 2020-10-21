@@ -1,0 +1,101 @@
+<%
+function activeNavClass(nav) {
+    if (options.activeNav && options.activeNav == nav) {
+        return 'active';
+    } else {
+        return '';
+    }
+}
+%>
+<div class="header-alternate-spacer"></div>
+<header class="header-alternate-wrapper headroom">
+    <div class="sub-header">
+        <div class="container-fluid contained">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="/">
+                    <img class="sih-logo-postscroll" src="/assets/images/sih-logo-header-post-scroll.png" />
+                </a>
+                <ul class="navbar-nav show-xs">
+                    <li class="nav-item">
+                        <button class="nav-link nav-toggle-menu" onclick="$('div.navbar-side').toggleClass('toggle-xs-on');">
+                            <i class="icon-bars"></i>
+                        </button>
+                    </li>
+                </ul>
+                <div class="navbar-nav navbar-side mr-2 toggle-xs">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link <%= activeNavClass('home') %>" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <%= activeNavClass('episodes') %>" href="/episodes/">Episodes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <%= activeNavClass('about') %>" href="/about/">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <%= activeNavClass('guests') %>" href="/guests/">Guests</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <%= activeNavClass('contact') %>" href="/contact/">Contact Us</a>
+                        </li>
+                        <li class="nav-item show-xs">
+                            <a class="nav-link <%= activeNavClass('search') %>" href="/search">Search</a>
+                        </li>
+                    </ul>
+                </div>
+                <form method="GET" action="/search" class="search-header hide-xs" autocomplete="off">
+                    <input class="search-header__query" type="text" name="keywords" value="" placeholder="Search">
+                    <button type="submit" class="search-header__action search-header__action_submit"><i class="icon-search"></i></button>
+                    <button type="button" class="search-header__action search-header__action_clear"><span class="close-icon"></span></button>
+                </form>
+            </nav>
+        </div>
+    </div>
+</header>
+<div class="header-wrapper hidden-sm-down">
+    <div class="main-header">
+        <div class="container-fluid contained">
+            <nav class="top-header navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="/">
+                    <img  class="sih-logo" src="/assets/images/sih-logo-header.png" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </div>
+        <img class="hosts-logo" src="/assets/images/sih-hosts-header-image.png" />
+        <img class="hosts-logo hosts-logo_mobile" src="/assets/images/sih-hosts-header-image_mobile.png" />
+    </div>
+    <div class="sub-header">
+        <div class="container-fluid contained">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link <%= activeNavClass('home') %>" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <%= activeNavClass('episodes') %>" href="/episodes/">Episodes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <%= activeNavClass('about') %>" href="/about/">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <%= activeNavClass('guests') %>" href="/guests/">Guests</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <%= activeNavClass('contact') %>" href="/contact/">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form method="GET" action="/search" class="search-header" autocomplete="off">
+                        <input class="search-header__query" type="text" name="keywords" value="" placeholder="Search">
+                        <button type="submit" class="search-header__action search-header__action_submit"><i class="icon-search"></i></button>
+                        <button type="button" class="search-header__action search-header__action_clear"><span class="close-icon"></span></button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>

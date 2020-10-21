@@ -1,0 +1,26 @@
+<%- include('../functions/index'); %>
+
+<div class="section-wrapper">
+    <% include ./sidebar/subscription-box %>
+</div>
+
+<% if (page.sidebarItems && page.sidebarItems.length > 0) { %>
+    <% page.sidebarItems.sort(function(item1, item2) { return item1.order < item2.order}).forEach(function(block){ %>
+        <%- include('./sidebar/sidebar-block-item', { block: block }); %>
+    <% }); %>
+<% } %>
+
+<% include ./sidebar/podcast-platforms %>
+
+<% include ./sidebar/connect-social.ejs %>
+
+<div class="section-wrapper">
+    <div id="oas_x95"></div>
+    <script type="text/javascript">oas_tag.loadAd("x95");</script>
+</div>
+
+<% if (page.displayHosts && hosts.length > 0) {
+    hosts.forEach(function (host) { %>
+        <%- include('./sidebar/about-the-host', {host: host}); %>
+    <% }); %>
+<% } %>

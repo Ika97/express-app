@@ -1,0 +1,225 @@
+@import "../../node_modules/pikaday/scss/pikaday";
+
+// Required
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/mixins";
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$grays: () !default;
+$grays: map-merge((
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900
+), $grays);
+
+$blue:    #22a0e1 !default;
+$dark-blue:    #0079E3 !default;
+$indigo:  #7E5BEF !default;
+$purple:  #7E5BEF !default;
+$pink:    #FF49DB !default;
+$red:     #FF4949 !default;
+$orange:  #ec8326 !default;
+$yellow:  #FFC82C !default;
+$green:   #13CE66 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+$colors: () !default;
+$colors: map-merge((
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "white":      $white,
+    "gray":       $gray-600,
+    "gray-dark":  $gray-800
+), $colors);
+
+$primary:       $dark-blue !default;
+$secondary:    $blue !default;
+$success:       $green !default;
+$info:          #C0CCDA !default;
+$warning:       $orange !default;
+$danger:        $red !default;
+$light:         #EFF2F7 !default;
+$dark:          #1F2D3D;
+
+$theme-colors: () !default;
+$theme-colors: map-merge((
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark
+), $theme-colors);
+
+// $primary:       #22a0e1;
+// $primary:       #00559F;
+// $secondary:       #ec8326;
+// $success: #13CE66;
+// $danger: #FF4949;
+// $warning:       #ec8326;
+//
+//$enable-gradients: true;
+
+$font-family-base:       "Proxima Nova W01", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+
+$input-color:                           $gray-800;
+$input-border-color:                    #BBBBBB;
+// $input-border-width:                    $input-btn-border-width;
+$input-box-shadow:                      inset 0 0px 3px 0 rgba(41, 41, 41, 0.2);
+// $input-focus-bg:                        $input-bg !default;
+$input-focus-border-color:              $dark-blue;
+// $input-focus-color:                     $input-color !default;
+// $input-focus-width:                     $input-btn-focus-width !default;
+// $input-focus-box-shadow:                $input-btn-focus-box-shadow !default;
+$input-placeholder-color:               #999999;
+
+@import "./variables";
+
+// Optional
+/*!
+ * Bootstrap v4.1.1 (https://getbootstrap.com)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap-reboot";
+@import "../../node_modules/bootstrap/scss/bootstrap-grid";
+
+@import "./article";
+@import "text-content/text-content";
+
+@import "./article-item";
+@import "./episodes";
+@import "./main";
+@import "./modal";
+@import "./people-item";
+@import "./sidebar";
+@import "./search";
+@import "./form";
+@import "./containers";
+@import "./homepage";
+@import "./single-guest";
+@import "./page";
+
+@import "./layouts/episodes-layout";
+
+@import "./components/connect-social";
+@import "./components/about-the-host";
+@import "./components/podcast-platforms";
+@import "./components/subscription-box";
+@import "./components/social-share";
+@import "./components/welcome-letter";
+@import "./components/connect-social";
+@import "./components/episode-bar";
+@import "./components/orange-link";
+@import "./components/article-featured-guest";
+@import "./components/article-featured-guests";
+@import "./components/preview-wrapper";
+@import "./components/search-header";
+@import "./components/close-icon";
+@import "./components/pagination";
+@import "./components/pika-lendar";
+@import "./components/form-control";
+@import "./components/episode-archive-header";
+@import "./components/search-panel";
+@import "./components/date-field-group";
+@import "./components/single-episode";
+@import "./components/episode-archive";
+@import "./components/listen-button";
+@import "./components/form-label";
+@import "./components/font-resizer";
+
+@import "./header";
+@import "./footer";
+
+@import "./sr-podcast-icons/style";
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container-fluid.contained {
+  max-width: 1220px;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 0;
+  padding-left: 0;
+
+  > .row,
+  > [class*="row-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.hero-wrapper{
+    background-color: rgba(0,55,102,0.9);
+    background-image: url('/assets/images/dw-header-banner.png');
+    background-size: cover, contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 140px;
+    z-index: -1;
+    position: relative;
+    margin-bottom: -110px;
+    div{
+        width: 50%
+    }
+}
+
+body {
+  color: #111111;
+
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: sticky;
+}
+
+.wrap-on-mobile {
+  @include media-breakpoint-down(xs) {
+    width: 100%;
+  }
+}

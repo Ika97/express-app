@@ -1,0 +1,65 @@
+@import "../article/variables";
+
+.podcast-platfroms {
+  font: $title-bold;
+  margin-top: 38px;
+  color: $gray-9;
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 22px;
+    border-bottom: 2px solid $gray-61;
+    padding: 4px 0;
+  }
+
+  &__items-container {
+    padding-top: 25px;
+  }
+
+  &__item {
+    border: 1px solid #777878;
+    border-radius: 12px;
+    background-color: #ffffff;
+    padding: 5px 15px 5px 11px;
+    font: 600 26px "Proxima Nova W01";
+    letter-spacing: -0.1px;
+    display: table;
+    margin-top: 10px;
+
+    &_icon {
+      float: left;
+      width: 36px;
+    }
+
+    &_text {
+      float: left;
+      margin-left: 9px;
+      margin-bottom: 0;
+      display: table-cell;
+      vertical-align: middle;
+
+      .sub-title {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 18px;
+      }
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__item-image {
+    width: 213px;
+  }
+
+  a {
+    color: inherit;
+  }
+}

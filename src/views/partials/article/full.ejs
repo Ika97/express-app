@@ -1,0 +1,98 @@
+<%- include('../../functions/index'); %>
+
+<div class="article">
+    <div class="article-title">
+        <%= article.title %>
+    </div>
+
+    <div class="byline-container no-gutters">
+        <div class="row no-gutters">
+            <div class="col">
+                <div class="article-byline">
+                    <div class="first-line">
+                        <div class="meta">
+                            <% if(hasCategory(article.categories, 'episode')) { %>
+                                <span class="episode">EPISODE <%= article.episodeNumber %></span>
+                                <span class="marker"></span>
+                            <% } %>
+                            <span class="date"><%= article.createdAtMoment.format('dddd, MMMM D, YYYY'); %></span>
+                        </div>
+                        <% if (nextEpisode) { %>
+                            <a class="orange-link next-episode" href="/episodes/<%- nextEpisode.slug %>">Next Episode <i class="icon-angle-right"></i></a>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page__share page__share_mobile">
+        <%- include('./social-share', { article: article, orientation: 'horizontal' }); %>
+    </div>
+
+    <div class="article-body" style="margin-top: 20px;">
+        <% if (article.playerEmbed) { %>
+            <div>
+                <%- article.playerEmbed %>
+            </div>
+        <% } %>
+
+        <div class="article-content text-content text-content_single-post">
+            <% if (article.inEpisode) { %>
+                <h2>In This Episode</h2>
+
+                <%- article.inEpisode %>
+
+                <hr>
+            <% } %>
+
+            <% if (article.mappedPeople && article.mappedPeople.length > 0) {%>
+                <h2>Featured Guests</h2>
+
+                <div class="article-featured-guests">
+                    <% article.mappedPeople.forEach(function(person){ %>
+                        <div class="article-featured-guests__guest article-featured-guest">
+                            <div class="row no-gutters">
+                                <div class="col-sm-3">
+                                    <% if (person.imageUrl) { %>
+                                        <img class="article-featured-guest__shot" src="<%= person.imageUrl %>" alt="<%= person.name %>" />
+                                    <%} else { %>
+                                        <img class="article-featured-guest__shot" src="/assets/images/guest-photo-placeholder.png" alt="Guest Photo Placeholder" />
+                                    <%} %>
+                                </div>
+                                <div class="col-sm-9">
+                                    <div class="article-featured-guest__info">
+                                        <div class="article-featured-guest__name"><%- person.name %></div>
+                                        <div class="article-featured-guest__description"><%- person.bio %></div>
+                                        <a href="/guests/<%- person.code %>" class="orange-link article-featured-guest__cta">READ FULL BIO</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <% }) %>
+                </div>
+
+                <hr>
+            <% } %>
+
+            <% if (article.extraContent) { %>
+                <h2>Episode Extras</h2>
+
+                <%- article.extraContent %>
+
+                <hr>
+            <% } %>
+
+            <% if (article.content) { %>
+                <h2>Transcript</h2>
+
+                <div class="preview-wrapper">
+                    <div class="preview-wrapper__content">
+                        <%- article.content %>
+                    </div>
+                    <button class="preview-wrapper__button btn btn-warning">Read Full Transcript <i class="icon-plus-2"></i></button>
+                </div>
+            <% } %>
+        </div>
+    </div>
+</div>

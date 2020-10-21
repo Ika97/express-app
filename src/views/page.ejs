@@ -1,0 +1,32 @@
+<%- include('./functions/index'); %>
+<html>
+<head>
+    <%- include('./partials/head', { meta: getMeta() }); %>
+</head>
+<body>
+<!-- Google Tag Manager -->
+<%- include('./scripts/gtm-body'); %>
+
+<!-- Header -->
+<%- include('./partials/header'); %>
+
+<!-- Core -->
+<div class="container-fluid contained" style="margin-top: 0px;">
+    <div class="row">
+        <div class="main col-md-12 col-lg-8">
+            <div class="text-content">
+                <%- page.content %>
+            </div>
+        </div>
+        <div class="sidebar col-md-12 col-lg-4">
+            <%- include('./partials/sidebar'); %>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<% include ./partials/footer %>
+<!-- End Footer -->
+
+</body>
+</html>

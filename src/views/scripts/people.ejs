@@ -1,0 +1,13 @@
+<script>
+    (function($) {
+        $(document).ready(function() {
+            var $peopleForm = $('#peopleForm'),
+                $peopleOrder = $('#peopleOrderBy');
+
+            $peopleOrder.on('change', function() {
+                  $('#peopleForm').submit();
+            });
+        });
+
+    })(jQuery)
+</script>

@@ -1,0 +1,68 @@
+<%
+getSidebar = function() {
+    if (options.sidebar) {
+        return options.sidebar;
+    }
+    else {
+        return '';
+    }
+}
+
+getArticles = function() {
+    if (options.articles) {
+        return options.articles;
+    }
+    else {
+        return {
+            recent: [],
+            trending: []
+        };
+    }
+}
+
+getMeta = function() {
+    if (page.meta) {
+        return page.meta;
+    }
+    else {
+        return {
+            title: 'Stansberry Investor Hour',
+            description: null,
+            keywords: null,
+            featuredImage: null,
+            openGraph: {
+                'og:title': null,
+                'og:description': null,
+                'og:type': null
+            }
+        }
+    }
+}
+
+getFeaturedPeopleList = function (people) {
+    let peopleList = '';
+
+    if (people && people.length > 0) {
+        people.forEach(function (person, index) {
+            if (index === people.length - 1 && people.length !== 1) {
+                peopleList = peopleList.concat(' and ')
+            } else if (index !== 0) {
+                peopleList = peopleList.concat(', ');
+            }
+            peopleList = peopleList.concat(person.name);
+        })
+    }
+    return peopleList;
+}
+
+hasCategory = function (categories, value) {
+    if (categories && categories.length > 0 && value) {
+        for (let i = 0; i < categories.length; i++) {
+            if (categories[i] === value) {
+                return true;
+            }
+        }
+    }
+    return false;
+}
+%>

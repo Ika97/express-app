@@ -1,0 +1,24 @@
+<title><%= meta.title ? meta.title : '' %></title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="<%= meta.description %>" />
+<%_ if (meta.keywords) { _%><meta name="keywords" content="<%= meta.keywords %>" /><% } _%>
+<meta name="copyright" content="2018 Stansberry Research" />
+<%_ if (meta.openGraph) { _%>
+<%_ if (meta.openGraph['og:title']) { %><meta property="og:title" content="<%- meta.openGraph['og:title'] %>" /><% } _%>
+<%_ if (meta.openGraph['og:description']) { %><meta property="og:description" content="<%- meta.openGraph['og:description'] %>" /><% } _%>
+<%_ if (meta.openGraph['og:type']) { %><meta property="og:type" content="<%- meta.openGraph['og:type'] %>" /><% } _%>
+<%_ } %>
+<link rel="icon" type="image/png" href="/assets/favicon.ico" />
+
+<link rel="stylesheet" href="/assets/css/default.css">
+<link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/cdf18ec2-0c88-436e-a666-efc7bb708c5f.css"/>
+<link href="//fonts.googleapis.com/css?family=Orbitron:900" rel="stylesheet">
+
+<script src="/assets/js/jquery.slim.min.js"></script>
+<script src="/assets/js/headroom.min.js"></script>
+<script src="/assets/js/main.min.js"></script>
+
+<%- include('../scripts/ad-server'); %>
+<%- include('../scripts/gtm-head'); %>
+<%- include('../scripts/search-header'); %>

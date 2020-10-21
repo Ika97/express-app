@@ -1,0 +1,29 @@
+<script>
+    (function($) {
+        $(document).ready(function() {
+            var $chkListView = $('#toggleListView'),
+                isListView = SR.Cookies.readCookie('isListView') === '1';
+
+            $chkListView.attr('checked', function () {
+                return isListView ? 1 : null;
+            });
+
+            $chkListView.on('change', function() {
+                var isListViewChecked = $chkListView.is(':checked');
+
+                refreshLists(isListViewChecked);
+
+                SR.Cookies.createCookie('isListView', isListViewChecked ? 1 : 0, 7);
+
+                isListView = isListViewChecked;
+            });
+
+            function refreshLists(isListView) {
+                $(".non-list-view").toggle(!isListView);
+                $(".list-view").toggle(isListView);
+            }
+
+            refreshLists(isListView);
+        });
+    })(jQuery)
+</script>

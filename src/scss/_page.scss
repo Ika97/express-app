@@ -1,0 +1,33 @@
+.page {
+  &__content-wrapper {
+    position: relative;
+  }
+
+  &__share-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 40px;
+  }
+
+  &__share {
+    &_desktop {
+      margin-top: 118px;
+      margin-bottom: 50px;
+      top: 166px;
+
+      @media all and (max-width: 1300px) {
+        display: none;
+      }
+    }
+
+    &_mobile {
+      display: none;
+
+      @media all and (max-width: 1299px) {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+<%- include('./functions/index'); %>
+<html>
+<head>
+    <%- include('./partials/head', { meta: getMeta() }); %>
+    <script src="/assets/js/moment.min.js "></script>
+    <script src="/assets/js/pikaday.js "></script>
+</head>
+<body>
+<!-- Google Tag Manager -->
+<%- include('./scripts/gtm-body'); %>
+
+<!-- Header -->
+<%- include('./partials/header'); %>
+
+<!-- Core -->
+<div class="container-fluid contained">
+    <div class="row">
+        <div class="main col-md-12 col-lg-8">
+            <div style="font-size: 24px;">
+                <h1 style="font-size: 26px;font-weight: 700;text-transform: uppercase;">Search <i>Investor Hour</i></h1>
+            </div>
+            <form id="searchForm" action="/search" method="GET" autocomplete="off">
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label class="control-label form-label" for="fKeywords">Search for:</label>
+                        <input class="form-control" id="fKeywords" type="text" name="keywords" placeholder="Keywords" value="<%= query.keywords %>">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-lg-6 col-md-12">
+                        <label class="control-label form-label" for="fPerson">Person</label>
+                        <select class="form-control" id="fPerson" name="person">
+                            <option value="">Any</option>
+                            <% availablePeople.forEach(function(person) { %>
+                            <option value="<%= person.code %>"<% if (person.code === query.person) { %> selected<% } %>><%- person.name %></option>
+                            <% }) %>
+                        </select>
+                    </div>
+                    <div class="form-group col-lg-3 col-md-6">
+                        <label class="control-label form-label" for="filterDateFrom">From</label>
+                        <div class="inner-addon right-addon">
+                            <i class="far icon-calendar-2"></i>
+                            <input type="text" class="form-control" id="filterDateFrom" name="dateFrom" placeholder="MM/DD/YYYY" type="text" <% if (search.query.dateFrom !== undefined) { %> value="<%= search.query.dateFrom.format('MM/DD/YYYY') %>"<% } %> />
+                        </div>
+                    </div>
+                    <div class="form-group col-lg-3 col-md-6">
+                        <label class="control-label form-label" for="filterDateTo">To</label>
+                        <div class="inner-addon right-addon">
+                            <i class="far icon-calendar-2"></i>
+                            <input type="text" class="form-control" id="filterDateTo" name="dateTo" placeholder="MM/DD/YYYY" type="text" <% if (search.query.dateTo !== undefined) { %> value="<%= search.query.dateTo.format('MM/DD/YYYY') %>"<% } %> />
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-do-search" type="submit">Search</button>
+                <div<% if (!search.query.haveCriteria) {%> style="display: none"<% } %>>
+                    <div class="row mt-2 justify-content-sm-end">
+                        <div class="col-auto">
+                            <div class="form-inline">
+                                <div class="form-group mr-sm-2 mb-2 mb-sm-0">
+                                    <label class="mr-sm-2 form-label" for="searchOrderBy">Sort by</label>
+                                    <select class="form-control form-control-sm" name="order" id="searchOrderBy" type="text">
+                                        <% Object.keys(sortOptions).forEach(function(key) { %>
+                                        <option value="<%= key %>"<% if (query.order === key) { %> selected<% } %>><%- sortOptions[key] %></option>
+                                        <% }) %>
+                                    </select>
+                                </div>
+                                <div class="form-group wrap-on-mobile">
+                                    <label class="switch mr-2">
+                                        <input id="toggleListView" type="checkbox" class="chk-list-view" value="on">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <label for="toggleListView" class="switch-label">Show List View</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div<% if (!search.query.haveCriteria) {%> style="display: none"<% } %>>
+                <% if (search.totalCount > 0) { %>
+                    <div class="search-totals">There are <strong><span class="search-results-count"><%- search.totalCount %></span></strong> results found matching your search</div>
+                    <div class="search-results">
+                        <div class="non-list-view">
+                            <%- include('./partials/article/list-full', { articles: search.results, showArchive: false }); %>
+                        </div>
+                        <div class="list-view" style="display: none">
+                            <%- include('./partials/article/list-compact', { articles: search.results }); %>
+                        </div>
+                    </div>
+                    <div class="search-pagination">
+                        <%- include('./partials/pagination', {currentPage: search.searchData.currentPage, totalPages: search.searchData.totalPages, basePath: search.searchData.baseUrl}); %>
+                    </div>
+                <% } else { %>
+                    <div>No results found. Try refining your search</div>
+                <% } %>
+            </div>
+        </div>
+        <div class="sidebar col-md-12 col-lg-4">
+            <%- include('./partials/sidebar'); %>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<% include ./partials/footer %>
+
+<% include ./scripts/view-toggle.ejs %>
+
+<!-- Search -->
+<% include ./scripts/search %>
+</body>
+</html>

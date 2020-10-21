@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="13349a3a-27aa-4f22-83da-a717d0cc705c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeDeploy/AfterInstall.sh" beforeDir="false" afterPath="$PROJECT_DIR$/CodeDeploy/AfterInstall.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeDeploy/ApplicationStart.sh" beforeDir="false" afterPath="$PROJECT_DIR$/CodeDeploy/ApplicationStart.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeDeploy/ApplicationStop.sh" beforeDir="false" afterPath="$PROJECT_DIR$/CodeDeploy/ApplicationStop.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeDeploy/BeforeInstall.sh" beforeDir="false" afterPath="$PROJECT_DIR$/CodeDeploy/BeforeInstall.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeDeploy/StartMonitor.sh" beforeDir="false" afterPath="$PROJECT_DIR$/CodeDeploy/StartMonitor.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeDeploy/resources/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/CodeDeploy/resources/default.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appspec.yml" beforeDir="false" afterPath="$PROJECT_DIR$/appspec.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildspec.yml" beforeDir="false" afterPath="$PROJECT_DIR$/buildspec.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sr-podcast-icons/selection.json" beforeDir="false" afterPath="$PROJECT_DIR$/sr-podcast-icons/selection.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/configuration-registry.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/configuration-registry.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/datastores.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/datastores.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/article.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/article.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/person.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/person.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/site-route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/site-route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware/redirects.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/redirects.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/article.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/article.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/page.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/page.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/person.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/person.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/site-route.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/site-route.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/archive/archive.middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/archive/archive.middleware.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/articles/articles.helper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/articles/articles.helper.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/articles/articles.middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/articles/articles.middleware.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/cache-manager/index.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/cache-manager/index.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/cache-manager/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/cache-manager/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/cache-manager/lib/cache-manager.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/cache-manager/lib/cache-manager.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/cache-manager/test/cache-manager.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/cache-manager/test/cache-manager.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/express-routes/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/express-routes/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/pages/pages.helper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/pages/pages.helper.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/pages/pages.middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/pages/pages.middleware.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/people/people.helper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/people/people.helper.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/people/people.middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/people/people.middleware.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/redis-client/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/redis-client/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/redis-client/lib/redis-client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/redis-client/lib/redis-client.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/shared/html-cache.helper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/shared/html-cache.helper.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/shared/shared.middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/shared/shared.middleware.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/site-routes/site-routes.helper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/site-routes/site-routes.helper.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/site-routes/site-routes.middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/site-routes/site-routes.middleware.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/assets/fonts/sr-podcast-icons/sr-podcast-icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/assets/fonts/sr-podcast-icons/sr-podcast-icons.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/assets/images/icons/apple-podcast.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/assets/images/icons/apple-podcast.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/assets/images/subscribe-box-background.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/assets/images/subscribe-box-background.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routers/articles.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/articles.router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routers/error.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/error.router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routers/page.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/page.router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routers/people.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/people.router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routers/rss.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/rss.router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routers/search.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/search.router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routers/sitemap.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/sitemap.router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_article-item.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_article-item.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_article.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_article.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_containers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_containers.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_episodes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_episodes.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_form.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_homepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_homepage.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_modal.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_people-item.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_people-item.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_search.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_search.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_sidebar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_single-guest.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_single-guest.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/common/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/common/_fonts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_about-the-host.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_about-the-host.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_article-featured-guest.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_article-featured-guest.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_article-featured-guests.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_article-featured-guests.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_close-icon.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_close-icon.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_connect-social.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_connect-social.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_date-field-group.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_date-field-group.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_episode-archive-header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_episode-archive-header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_episode-archive.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_episode-archive.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_episode-bar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_episode-bar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_font-resizer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_font-resizer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_form-control.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_form-control.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_form-label.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_form-label.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_listen-button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_listen-button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_orange-link.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_orange-link.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_pagination.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_pagination.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_pika-lendar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_pika-lendar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_podcast-platforms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_podcast-platforms.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_preview-wrapper.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_preview-wrapper.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_search-header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_search-header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_search-panel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_search-panel.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_single-episode.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_single-episode.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_social-share.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_social-share.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_subscription-box.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_subscription-box.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/components/_welcome-letter.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/components/_welcome-letter.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/default.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/default.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/layouts/_episodes-layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/layouts/_episodes-layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/sr-podcast-icons/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sr-podcast-icons/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/sr-podcast-icons/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sr-podcast-icons/variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/text-content/_text-content-icons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/text-content/_text-content-icons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/text-content/_text-content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/text-content/_text-content.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/logger.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/logger.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/misc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/misc.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/url.helper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/url.helper.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/article.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/article.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/episodes.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/episodes.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/functions/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/functions/index.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/guests.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/guests.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/home.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/home.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/not-found.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/not-found.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/page.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/page.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/partials/ads/banner-sidebar.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/partials/ads/banner-sidebar.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/partials/ads/banner.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/partials/ads/banner.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/partials/article/full.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/partials/article/full.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/partials/article/item-sidebar.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/partials/article/item-sidebar.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/partials/article/item.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/partials/article/item.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/partials/article/list-both.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/partials/article/list-both.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/partials/article/list-compact.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/partials/article/list-compact.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/partials/article/list-full.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/partials/article/list-full.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/partials/article/list-sidebar.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/partials/article/list-sidebar.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/partials/article/preview.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/partials/article/preview.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/partials/article/single-episode.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/partials/article/single-episode.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/partials/article/social-share.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/partials/article/social-share.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/partials/footer.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/partials/footer.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/partials/head.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/partials/head.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/partials/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/partials/header.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/partials/pagination.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/partials/pagination.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/partials/people/list.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/partials/people/list.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/partials/sidebar.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/partials/sidebar.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/partials/sidebar/about-the-host.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/partials/sidebar/about-the-host.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/partials/sidebar/connect-social.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/partials/sidebar/connect-social.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/partials/sidebar/podcast-platforms.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/partials/sidebar/podcast-platforms.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/partials/sidebar/sidebar-block-item.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/partials/sidebar/sidebar-block-item.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/partials/sidebar/subscription-box.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/partials/sidebar/subscription-box.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/partials/structured-data.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/partials/structured-data.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/person.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/person.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/rss.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/rss.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/scripts/ad-server.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/scripts/ad-server.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/scripts/font-resizer.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/scripts/font-resizer.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/scripts/gtm-body.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/scripts/gtm-body.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/scripts/gtm-head.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/scripts/gtm-head.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/scripts/guests.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/scripts/guests.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/scripts/headroom.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/scripts/headroom.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/scripts/iframe-size.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/scripts/iframe-size.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/scripts/people.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/scripts/people.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/scripts/preview-wrapper.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/scripts/preview-wrapper.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/scripts/search-header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/scripts/search-header.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/scripts/search.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/scripts/search.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/scripts/view-toggle.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/scripts/view-toggle.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/search.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/search.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/routes.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/routes.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/tslint.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileColors">
+    <fileColor scope="Non-Project Files (Material Default)" color="2E3C43" />
+    <fileColor scope="Non-Project Files (Material Darker)" color="323232" />
+    <fileColor scope="Non-Project Files (Material Lighter)" color="eae8e8" />
+    <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package_json" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>console.lo</find>
+      <find>populateAvailablePeople</find>
+      <find>availablePeople</find>
+      <find>peopleRouter</find>
+      <find>bp-medi</find>
+      <find>caption</find>
+      <find>include bp-sma</find>
+      <find>.side</find>
+      <find>.header-wrapper</find>
+      <find>header-alternate-wrapper</find>
+      <find>subscri</find>
+      <find>.nav-item .nav-link</find>
+      <find>sih-logo-postscroll</find>
+      <find>alternate</find>
+      <find>icon-play</find>
+      <find>fa-play-circle</find>
+      <find>article-title</find>
+      <find>pageError</find>
+      <find>slash</find>
+      <find>setDefaultLocals</find>
+      <find>player-embed</find>
+      <find>&lt;%- in</find>
+      <find>featured</find>
+      <find>text-content</find>
+      <find>list-view</find>
+      <find>MAIN</find>
+      <find>GET&quot;</find>
+      <find>main.min</find>
+      <find>IArticleModel</find>
+      <find>siteUrl</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/WT-2554" />
+      </map>
+    </option>
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGulp">
+      <scroll-view-position x="0" y="0" />
+      <selected-paths>
+        <path>
+          <id value="$PROJECT_DIR$/gulpfile.js" />
+          <id value="serve" />
+        </path>
+      </selected-paths>
+    </layout>
+  </component>
+  <component name="ProjectId" id="1X4hkovD5625T6KBKixqtkCYdM2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="SearchEverywhereHistoryKey" value="GULP&#9;FILE&#9;file://D:/Stansberry-Research-Investor-Hour.git/gulpfile.js&#10;fo&#9;FILE&#9;file://D:/Stansberry-Research-Investor-Hour.git/src/scss/_footer.scss&#10;_reboot&#9;FILE&#9;file://D:/Stansberry-Research-Investor-Hour.git/node_modules/bootstrap/scss/_reboot.scss&#10;article.ts&#9;FILE&#9;file://D:/Stansberry-Research-Investor-Hour.git/src/interfaces/article.ts&#10;person.&#9;FILE&#9;file://D:/Stansberry-Research-Investor-Hour.git/src/interfaces/person.ts&#10;shared&#9;FILE&#9;file://D:/Stansberry-Research-Investor-Hour.git/src/modules/shared/shared.middleware.ts&#10;subscription-box&#9;FILE&#9;file://D:/Stansberry-Research-Investor-Hour.git/src/views/partials/sidebar/subscription-box.ejs&#10;header&#9;FILE&#9;file://D:/Stansberry-Research-Investor-Hour.git/src/views/partials/header.ejs&#10;setbackgr&#9;ACTION&#9;Images.SetBackgroundImage&#10;setbac&#9;null&#9;null" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="D:/Stansberry-Research-Investor-Hour.git/node_modules/tslint" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Stansberry-Research-Investor-Hour.git\src\scss\webfonts" />
+      <recent name="D:\Stansberry-Research-Investor-Hour.git\src\public\assets\styles\fonts\orbitron" />
+      <recent name="D:\Stansberry-Research-Investor-Hour.git\src\views\partials\sidebar" />
+      <recent name="D:\Stansberry-Research-Investor-Hour.git\src\views\partials\sidebar\sidebar-blocks" />
+      <recent name="D:\Stansberry-Research-Investor-Hour.git\src\scss\common" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Stansberry-Research-Investor-Hour.git\src\public\assets\styles\fonts" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
+      <tasks>
+        <task>serve</task>
+      </tasks>
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="serve" type="js.build_tools.gulp" editBeforeRun="true" temporary="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
+      <tasks>
+        <task>serve</task>
+      </tasks>
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gulp.js.serve" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="13349a3a-27aa-4f22-83da-a717d0cc705c" name="Default" comment="" />
+      <created>1528289331026</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1528289331026</updated>
+      <workItem from="1528289337466" duration="476000" />
+      <workItem from="1528290013735" duration="20965000" />
+      <workItem from="1528707926200" duration="13006000" />
+      <workItem from="1528877344008" duration="10102000" />
+      <workItem from="1528979930646" duration="10550000" />
+      <workItem from="1529052959322" duration="1003000" />
+      <workItem from="1529054057116" duration="12776000" />
+      <workItem from="1529314972193" duration="2705000" />
+      <workItem from="1529319128798" duration="67223000" />
+      <workItem from="1529780845281" duration="12000" />
+      <workItem from="1529913698645" duration="22718000" />
+      <workItem from="1530002274685" duration="7219000" />
+      <workItem from="1530013566641" duration="1909000" />
+      <workItem from="1530018480422" duration="6340000" />
+      <workItem from="1530085746373" duration="677000" />
+      <workItem from="1530090777156" duration="29968000" />
+      <workItem from="1530287696801" duration="3314000" />
+      <workItem from="1530349350821" duration="4501000" />
+      <workItem from="1530521489728" duration="27000" />
+      <workItem from="1530534273844" duration="3775000" />
+      <workItem from="1530691222846" duration="40401000" />
+      <workItem from="1531126129271" duration="15499000" />
+      <workItem from="1531300859769" duration="708000" />
+      <workItem from="1531311094741" duration="2319000" />
+      <workItem from="1531398254889" duration="764000" />
+      <workItem from="1531404545237" duration="106000" />
+      <workItem from="1531490164127" duration="6119000" />
+      <workItem from="1531741574043" duration="1810000" />
+      <workItem from="1531746007995" duration="682000" />
+      <workItem from="1531843410822" duration="6120000" />
+      <workItem from="1531923885794" duration="8130000" />
+      <workItem from="1532968676605" duration="622000" />
+      <workItem from="1533022261999" duration="465000" />
+      <workItem from="1536346339043" duration="5051000" />
+      <workItem from="1536567247031" duration="599000" />
+      <workItem from="1580218835487" duration="1028000" />
+      <workItem from="1580220113533" duration="1971000" />
+      <workItem from="1580311422115" duration="2773000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+    <option name="additionalRoots">
+      <list>
+        <option value="$PROJECT_DIR$/node_modules" />
+      </list>
+    </option>
+  </component>
+</project>

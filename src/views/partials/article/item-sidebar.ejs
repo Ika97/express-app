@@ -1,0 +1,13 @@
+<div class="article-item">
+    <% if (itemType == 'articles'){ %>
+    <a href="/episodes/<%- article.slug %>/" class="article-title"><%- article.title %></a>
+    <% if(article.people) { %>
+        <div class="article-byline">
+            <span class="marker"></span>
+            <span class="author">By <%- article.people %></span>
+        </div>
+    <% } else { %>
+        <div>NO PEOPLE</div>
+    <% } %>
+    <% } %>
+</div>

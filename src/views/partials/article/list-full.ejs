@@ -1,0 +1,36 @@
+<%- include('../../functions/index'); %>
+
+<% articles.forEach(function(article) { %>
+    <div class="article-item">
+        <a href="<%= article.path %>">
+            <% if (article.imageUrl) { %>
+                <img class="article-item__image" src="<%= article.imageUrl %>" alt="">
+            <% } else { %>
+                <img class="article-item__image" src="/assets/images/post-placeholder.png" alt="">
+            <% } %>
+        </a>
+        <div class="article-item__details">
+            <div class="article-item__details-date">
+                <% if(article.hasCategory('episode')) { %>
+                    <strong>
+                        EPISODE <%= article.episodeNumber %> &#9642;
+                    </strong>
+                <% } %>
+                <%= article.createdAtMoment.format('MMMM D, YYYY') %>
+            </div>
+            <a class="article-item__details-title" href="<%= article.path %>"><%= article.title %></a>
+            <% if (article.mappedPeople && article.mappedPeople.length > 0) { %>
+                <div class="article-item__details-featuring">FEATURING: <%- getFeaturedPeopleList(article.mappedPeople) %></div>
+            <% } %>
+            <div class="article-item__details-content"><%- article.excerpt %></div>
+            <% if(article.hasCategory('episode')) { %>
+                <a class="article-item__details-button listen-button" href="<%= article.path %>">
+                    <i class="icon-play"></i><span class="listen-button__text">Listen here</span>
+                </a>
+            <% } %>
+        </div>
+    </div>
+<% }); %>
+<% if(showArchive) { %>
+    <a class="btn btn-light btn-block homepage__button" href="/episodes/">View Full Archive <i class="icon-angle-right homepage__button-icon"></i></a>
+<% } %>

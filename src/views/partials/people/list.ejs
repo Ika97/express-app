@@ -1,0 +1,21 @@
+<%- include('../../functions/index'); %>
+
+<% people.forEach(function(person) { %>
+    <div class="person-item">
+        <a href="/guests/<%= person.code%>">
+            <% if (person.imageUrl) { %>
+                <img class="person-item__image" src="<%= person.imageUrl %>" alt=""/>
+            <% } else { %>
+                <img class="person-item__image" src="/assets/images/guest-photo-placeholder.png"/>
+            <% } %>
+        </a>
+        <div class="person-item__details">
+            <a class="person-item__details-title" href="/guests/<%= person.code %>"><%= person.name %></a>
+            <div class="person-item__details-content"><%- person.title %></div>
+            <div class="person-item__details-content"><%- person.description %></div>
+            <a class="person-item__details-button" href="/guests/<%= person.code %>">
+                <span class="person-item__details-button-text">Read Full Bio</span>
+            </a>
+        </div>
+    </div>
+<% }) %>

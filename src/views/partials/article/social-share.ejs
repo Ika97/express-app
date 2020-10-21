@@ -1,0 +1,37 @@
+<ul class="single-post-article-share single-post-article-share_square<% if (orientation === 'horizontal') { %> single-post-article-share_horizontal<% } %>">
+    <li>
+        <a href="<%= article.social.facebook %>" target="_blank"
+           class="single-post-article-share__item single-post-article-share__item_facebook">
+            <i class="single-post-article-share__item-icon icon-facebook"></i>
+        </a>
+    </li>
+    <li>
+        <a href="<%= article.social.twitter %>" target="_blank"
+           class="single-post-article-share__item single-post-article-share__item_twitter">
+            <i class="single-post-article-share__item-icon icon-twitter"></i>
+        </a>
+    </li>
+    <li>
+        <a href="<%= article.social.linkedIn %>" target="_blank"
+           class="single-post-article-share__item single-post-article-share__item_linkedin">
+            <i class="single-post-article-share__item-icon icon-linkedin"></i>
+        </a>
+    </li>
+    <li>
+        <a href="/rss/" target="_blank"
+           class="single-post-article-share__item single-post-article-share__item_rss">
+            <i class="single-post-article-share__item-icon icon-rss"></i>
+        </a>
+    </li>
+    <li>
+        <a href="<%= article.social.mailTo %>" target="_blank"
+           class="single-post-article-share__item single-post-article-share__item_email">
+            <i class="single-post-article-share__item-icon single-post-article-share__item-icon_smaller icon-envelope"></i>
+        </a>
+    </li>
+    <li style="cursor: default">
+        <div class="font-resizer">
+            <i class="font-resizer_icon font-resizer_icon_decrease" id="decrease">A</i><i class="font-resizer_icon font-resizer_icon_increase" id="increase">A</i>
+        </div>
+    </li>
+</ul>

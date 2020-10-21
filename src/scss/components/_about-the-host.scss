@@ -1,0 +1,42 @@
+@import "../article/variables";
+
+.about-the-host {
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+    padding: 20px 22px;
+    color: $gray-9;
+    font: $page-base-font;
+    margin-bottom: 24px;
+
+    &__header {
+        display: inline-block;
+    }
+
+    &__header-image {
+        float: left;
+        width: 74px;
+        height: 74px;
+        border-radius: 37px;
+        border: 1px solid #CCCCCC;
+    }
+
+    &__header-title {
+        float: left;
+        margin-left: 14px;
+        padding: 15px 0;
+
+        &__author {
+            font: 700 18px/24px "Proxima Nova W01";
+            margin: 0;
+        }
+
+        &__author-title {
+            line-height: 20px;
+            margin: 0;
+        }
+    }
+
+    &__content {
+        margin-top: 14px;
+    }
+}

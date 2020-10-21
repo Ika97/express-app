@@ -1,0 +1,37 @@
+<script>
+    (function($) {
+        $(document).ready(function() {
+            var $postContainer = $('.post-container'),
+                $chkListView = $('.chk-list-view'),
+                $searchForm = $('#searchForm'),
+                $searchOrder = $('#searchOrderBy'),
+                dateFormat = 'MM/DD/YYYY',
+                datepickeri18n = {
+                    previousMonth : '<i class="picker-nav-icon icon-angle-left"></i>',
+                    nextMonth     : '<i class="picker-nav-icon icon-angle-right"></i>',
+                    months        : ['January','February','March','April','May','June','July','August','September','October','November','December'],
+                    weekdays      : ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
+                    weekdaysShort : ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+                };
+
+            var filterDateFrom = new Pikaday({
+                field: $('#filterDateFrom')[0],
+                format: dateFormat,
+                i18n: datepickeri18n,
+                showDaysInNextAndPreviousMonths: true,
+            });
+
+            var filterDateTo = new Pikaday({
+                field: $('#filterDateTo')[0],
+                format: dateFormat,
+                i18n: datepickeri18n,
+                showDaysInNextAndPreviousMonths: true,
+            });
+
+            $searchOrder.on('change', function() {
+                $searchForm.submit();
+            });
+        });
+
+    })(jQuery)
+</script>

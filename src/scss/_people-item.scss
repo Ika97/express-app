@@ -1,0 +1,75 @@
+@import "article/variables";
+
+.person-item {
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  display: inline-block;
+  color: $gray-9;
+  font: 400 17px/24px "Proxima Nova W01";
+  letter-spacing: -.05;
+  width: 100%;
+
+  &__image {
+    width: percentage(151/830);
+    display: inline-block;
+    float: left;
+    min-height: percentage(151/830);
+  }
+
+  &__details {
+    width: percentage(518/830);
+    display: inline-block;
+    float: left;
+    margin-left: percentage(20/830);
+  }
+
+  &__details-date {
+    font: 400 15px/18px "Proxima Nova W01";
+    letter-spacing: .3px;
+  }
+
+  &__details-title {
+    margin-top: 6px;
+    font: 900 22px/18px "Proxima Nova W01";
+    color: inherit;
+
+    &:hover {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+
+  &__details-content {
+    margin-top: 7px;
+  }
+
+  &__details-button {
+    margin-top: 12px;
+    text-transform: uppercase;
+    font: 700 14px/17px "Proxima Nova W01";
+    color: #F59122;
+    display: inline-block;
+
+    &:hover {
+      color: #F59122;
+    }
+  }
+
+  &__details-button-text {
+    float: left;
+    padding-top: 2px;
+  }
+
+  &__details-featuring {
+    font-weight: 700;
+    font-style: italic;
+    line-height: 20px;
+    margin-top: 7px;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+    margin-bottom: 70px;
+    box-shadow: none;
+  }
+}

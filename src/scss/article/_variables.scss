@@ -1,0 +1,263 @@
+// @import '_icon-variables';
+
+$primary-gray: #222222;
+$primary-blue: #00559f;
+$primary-light-gray: #666666;
+$blue-special-link: #427be4;
+
+$secondary-gray: #999999;
+$secondary-red: #a90202;
+$secondary-blue: #003766;
+
+$tertiary-cyan: #00a8a3;
+$tertiary-yellow: #e7ba21;
+$tertiary-beige: #d6c299;
+$alliance-yellow: #FFC500;
+
+$quaternary-orange: #f59122;
+$quaternary-green: #4f8e3c;
+$quaternary-blue: #51c8ff;
+
+$profit-item-label: #1994D1;
+
+$ticker-red: #BE3428;
+$ticker-green: #4e8e41;
+
+$white: #ffffff;
+$gray-0: #f8f8f8;
+$gray-01: #f6f6f6;
+$gray-1: #f4f4f4;
+$gray-2: #eeeeee;
+$gray-3: #e4e4e4;
+$gray-4: #dddddd;
+$gray-41: #cccccc;
+$gray-5: #bbbbbb;
+$gray-51: #aaaaaa;
+$gray-6: #999999;
+$gray-61: #888888;
+$gray-7: #666666;
+$gray-71: #555555;
+$gray-72: #444444;
+$gray-8: #222222;
+$gray-9: #111111;
+$black: #000000;
+
+$blockquote-border: $gray-51;
+
+$gray-account-sidebar-border: #d9dcdd;
+
+$theme-blue-base: #00559f;
+$theme-blue-secondary-dark: #6d6e70;
+$theme-blue-secondary-light: #bbbdbf;
+$theme-blue-0: #003766;
+$theme-blue-1: #004480;
+$theme-blue-2: #00559f;
+$theme-blue-3: #006bb5;
+$theme-blue-4: #1e88e6;
+
+$theme-brown-base: #663813;
+$theme-brown-secondary-dark: #929497;
+$theme-brown-secondary-light: #d0d2d3;
+$theme-brown-0: #49280e;
+$theme-brown-1: #663813;
+$theme-brown-2: #834818;
+$theme-brown-3: #9f571e;
+$theme-brown-4: #bc6723;
+
+$theme-maroon-base: #a22c22;
+$theme-maroon-secondary-dark: #c0775e;
+$theme-maroon-secondary-light: #dab09f;
+$theme-maroon-0: #4e1510;
+$theme-maroon-1: #6a1d16;
+$theme-maroon-2: #86241c;
+$theme-maroon-3: #a22c22;
+$theme-maroon-4: #cc372b;
+
+$theme-lgreen-base: #4f8e3c;
+$theme-lgreen-secondary-dark: #bcac84;
+$theme-lgreen-secondary-light: #d8cfb9;
+$theme-lgreen-0: #1a2e14;
+$theme-lgreen-1: #174613;
+$theme-lgreen-2: #3b6a2d;
+$theme-lgreen-3: #4f8e3c;
+$theme-lgreen-4: #63b24b;
+
+$theme-green-base: #174613;
+$theme-green-secondary-dark: #637d57;
+$theme-green-secondary-light: #a6b39c;
+$theme-green-0: #1a2e14;
+$theme-green-1: #174613;
+$theme-green-2: #455e3e;
+$theme-green-3: #637d57;
+$theme-green-4: #7b9a6d;
+
+$theme-sky-base: #0087ca;
+$theme-sky-secondary-dark: #71c2ec;
+$theme-sky-secondary-light: #c6e3f6;
+$theme-sky-0: #0070a8;
+$theme-sky-1: #0087ca;
+$theme-sky-2: #199cdd;
+$theme-sky-3: #44afe6;
+$theme-sky-4: #71c2ec;
+$theme-sky-5: #c6e3f6;
+
+$theme-yellow-base: #e7ba21;
+$theme-yellow-secondary-dark: #004480;
+$theme-yellow-secondary-light: #006bb5;
+$theme-yellow-0: #aa8400;
+$theme-yellow-1: #b58d00;
+$theme-yellow-2: #c29700;
+$theme-yellow-3: #d6a812;
+$theme-yellow-4: #e7ba21;
+$theme-yellow-5: #ffcc33;
+$theme-yellow-6: #ffd65c;
+
+$theme-aqua-base: #00a8a3;
+$theme-aqua-secondary-dark: #6d6e70;
+$theme-aqua-secondary-light: #bbbdbf;
+$theme-aqua-0: #007f7b;
+$theme-aqua-1: #008f8b;
+$theme-aqua-2: #00a8a3;
+$theme-aqua-3: #40beba;
+$theme-aqua-4: #7fd3d1;
+
+$disabled-gray: #d9d9d9;
+
+$link-color: #0f75ce;
+$flat-button-color: #0F75CE;
+
+$lighten-modifier: 5%;
+$darken-modifier: 10%;
+
+$flat-button-darken-modifier-hover: 9%;
+$flat-button-darken-modifier-active: 14%;
+
+$takeover-alert-color-light: #D23528;
+$takeover-alert-color-dark: $alliance-yellow;
+$takeover-font-color: #0E0E0E;
+
+$flat-button-themes: (
+    blue: ($primary-blue, darken($primary-blue, $flat-button-darken-modifier-hover), darken($primary-blue, $flat-button-darken-modifier-active), $white, $white, $primary-blue, $white),
+    lblue: ($flat-button-color, darken($flat-button-color, $flat-button-darken-modifier-hover), darken($flat-button-color, $flat-button-darken-modifier-active), $white, $white, $flat-button-color, $white),
+    green: (#54a347, darken(#54a347, $flat-button-darken-modifier-hover), darken(#54a347, $flat-button-darken-modifier-active), $white, $white, #54a347, $white),
+    yellow-green: (#88BA09, darken(#88BA09, $flat-button-darken-modifier-hover), darken(#88BA09, $flat-button-darken-modifier-active), $white, $white, #88BA09, $white),
+    link: ($link-color, darken($link-color, $flat-button-darken-modifier-hover), darken($link-color, $flat-button-darken-modifier-active), $white, $white, $link-color, $white),
+    orange: (#e58611, darken(#e58611, $flat-button-darken-modifier-hover), darken(#e58611, $flat-button-darken-modifier-active), $white, $white, #e58611, $white),
+    gray: ($gray-2, darken($gray-2, $flat-button-darken-modifier-hover), darken($gray-2, $flat-button-darken-modifier-active), $white, $white, $gray-2, $white)
+);
+
+$gauge-themes: (
+    orange: #ee830C,
+    green: #5ca646
+);
+
+$themes: (
+        blue: ($theme-blue-base, $theme-blue-secondary-dark, $theme-blue-secondary-light, $theme-blue-1, $theme-blue-1, $theme-blue-2, $theme-blue-3, $theme-blue-4),
+        brown: ($theme-brown-base, $theme-brown-secondary-dark, $theme-brown-secondary-light, $theme-brown-0, $theme-brown-1, $theme-brown-2, $theme-brown-3, $theme-brown-4),
+        maroon: ($theme-maroon-base, $theme-maroon-secondary-dark, $theme-maroon-secondary-light, $theme-maroon-0, $theme-maroon-1, $theme-maroon-2, $theme-maroon-3, $theme-maroon-4),
+        lgreen: ($theme-lgreen-base, $theme-lgreen-secondary-dark, $theme-lgreen-secondary-light, $theme-lgreen-1, $theme-lgreen-1, $theme-lgreen-2, $theme-lgreen-3, $theme-lgreen-4),
+        green: ($theme-green-base, $theme-green-secondary-dark, $theme-green-secondary-light, $theme-green-0, $theme-green-1, $theme-green-2, $theme-green-3, $theme-green-4),
+        sky: ($theme-sky-base, $theme-sky-secondary-dark, $theme-sky-secondary-light, $theme-sky-0, $theme-sky-1, $theme-sky-2, $theme-sky-3, $theme-sky-4, $theme-sky-5),
+        yellow: ($theme-yellow-base, $theme-yellow-secondary-dark, $theme-yellow-secondary-light, $theme-yellow-0, $theme-yellow-1, $theme-yellow-2, $theme-yellow-3, $theme-yellow-4, $theme-yellow-5, $theme-yellow-6),
+        alliance: ($theme-yellow-base, $theme-yellow-secondary-dark, $theme-yellow-secondary-light, $theme-yellow-0, $theme-yellow-1, $theme-yellow-2, $theme-yellow-3, $theme-yellow-4, $theme-yellow-5, $theme-yellow-6),
+        aqua: ($theme-aqua-base, $theme-aqua-secondary-dark, $theme-aqua-secondary-light, $theme-aqua-0, $theme-aqua-1, $theme-aqua-2, $theme-aqua-3, $theme-aqua-4),
+        sr-team: ($theme-blue-base, $theme-blue-secondary-dark, $theme-blue-secondary-light, $theme-blue-1, $theme-blue-1, $theme-blue-2, $theme-blue-3, $theme-blue-4),
+);
+
+$page-header-themes: (
+    blue: (#106691, #093B54),
+    dblue: (#00213D, #004480),
+    brown: ($theme-brown-base, $theme-brown-secondary-dark),
+    maroon: ($theme-maroon-base, $theme-maroon-secondary-dark),
+    lgreen: ($theme-lgreen-base, $theme-lgreen-secondary-dark),
+    green: ($theme-green-base, $theme-lgreen-base),
+    sky: ($theme-sky-base, $theme-sky-secondary-dark),
+    yellow: ($theme-yellow-base, $theme-yellow-secondary-dark),
+    alliance: ($theme-yellow-base, $theme-yellow-secondary-dark),
+    aqua: ($theme-aqua-base, $theme-aqua-secondary-dark),
+    sr-team: ($theme-blue-base, $theme-blue-secondary-dark)
+);
+
+$bundled-membership-themes: (
+    blue: (#106691, $white),
+    brown: ($theme-brown-base, $white),
+    maroon: ($theme-maroon-base, $white),
+    lgreen: ($theme-lgreen-base, $white),
+    green: ($theme-green-base, $white),
+    sky: ($theme-sky-base, $white),
+    sps: (#106691, $white),
+    cho: ($theme-aqua-base, $white),
+    pwp: (#552E8F, $white),
+    alliance: ($theme-yellow-3, $white),
+    radio: (#106691, $white),
+);
+
+$post-label-themes: (
+        orange: ($white, #ee830c)
+);
+
+$container-side-padding: 15px;
+
+
+// used for styling text-content elements
+$content-themes: (
+        'blue': (#00579f, #e5edf4),
+        'brown': (#68390d, #eee0d3),
+        'lgreen': (#144712, #ebf1ea),
+        'green': (#144712, #ebf1ea),
+        'maroon': (#a13022, #f6e0de),
+        'sky': (#0688cb, #e5f6fe),
+        'yellow': ($theme-yellow-base, #eee0d3),
+        'alliance': ($theme-yellow-base, #eee0d3),
+        'aqua': (#0688cb, #e5f6fe),
+        'sr-team': (#00579f, #e5edf4)
+);
+
+$container-width: 1170px;
+
+$social-facebook: #454e97;
+$social-twitter: #5093d0;
+$social-linkedin: #2a6cb2;
+$social-email: #505050;
+
+$danger-color: rgb(210,53,40);
+$success-color: #4f8e3c;
+$warning-color: #ee830C;
+
+$min-mobile-height-to-fix-heading-box: 500px;
+$min-desktop-height-to-fix-heading-box: 800px;
+
+// Gotham Bold
+$title-bold: 700 16px "Proxima Nova W01", Times, serif;
+
+// Gotham Medium
+$title-semibold: 600 16px "Proxima Nova W01", Times, serif;
+
+// Gotham Book
+$title-subtext: 500 16px "Proxima Nova W01", Times, serif;
+
+$proxima-sans-serif: 300 16px "Proxima Nova W01", Times, sans-serif;
+
+$title-light: 300 16px "Proxima Nova W01", Times, sans-serif;
+
+$page-base-font: 400 16px "Proxima Nova W01", Times, sans-serif;
+
+// PT Serif Regular
+$text-regular: 400 16px "PT Serif W01", Times, serif;
+
+// PT Serif Italic
+$text-italic: italic 400 16px "PT Serif W01", Times, serif;
+
+// PT Serif Bold
+$text-bold: 700 16px "PT Serif W01", Times, serif;
+
+$gotham-book: "Proxima Nova W01", Times, serif;
+$gotham-bold: "Proxima Nova W01", Times, serif;
+
+$pt-regular: "PT Serif W01", Times, serif;
+$pt-italic: "PT Serif W01", Times, serif;
+$pt-bold: "PT Serif W01", Times, serif;
+
+$roboto-light: 300 16px "Roboto", sans-serif;
+$roboto-regular: 400 16px "Roboto", sans-serif;
+$roboto-bold: 700 16px "Roboto", sans-serif;

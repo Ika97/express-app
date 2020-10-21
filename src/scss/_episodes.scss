@@ -1,0 +1,39 @@
+.episodes-content{
+  h2 {
+    font-size: (30 / 18) * 1em;
+    font-family: $font-bolder-family;
+    font-weight: $font-bolder-weight;
+    text-transform: uppercase !important;
+  }
+
+  p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+
+    &:last-child {
+        margin: 0;
+    }
+  }
+}
+
+.episodes-form{
+
+}
+
+.episodes-totals{
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.episodes-results{
+  font-size: 22px;
+
+  .article-list a.article-title {
+    color: #00559F;
+    font-size: 1.05em;
+    font-weight: 500;
+  }
+}
+
+.episodes-pagination{
+
+}

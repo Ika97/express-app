@@ -1,0 +1,29 @@
+.main {
+  padding-top: 40px;
+  padding-bottom: 90px;
+
+  @include media-breakpoint-down(md) {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  .article-list{
+    a.article-title {
+      color: #000000;
+      font-size: 1em;
+      font-weight: 700;
+      line-height: 1.3em;
+    }
+
+    .article-byline {
+      font-size: .65em;
+      margin-top: 4px;
+    }
+
+    .article-excerpt {
+      font-size: .8em;
+      margin-top: 10px;
+      line-height: 1.35em;
+    }
+  }
+}

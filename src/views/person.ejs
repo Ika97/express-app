@@ -1,0 +1,68 @@
+<%- include('./functions/index'); %>
+<html>
+<head>
+    <%- include('./partials/head', { meta: getMeta() }); %>
+    <link href="//fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+</head>
+<body>
+<!-- Google Tag Manager -->
+<%- include('./scripts/gtm-body'); %>
+
+<!-- Header -->
+<%- include('./partials/header'); %>
+
+<!-- Core -->
+<div class="container-fluid contained" style="margin-top: 0px;">
+    <div class="row">
+        <div class="main col-md-12 col-lg-8">
+            <!-- Article Preview -->
+            <div class="single-guest">
+                <div class="single-guest__header-container clearfix">
+                    <% if (person.imageUrl) { %>
+                        <div class="single-guest__image-container">
+                            <img class="single-guest__image" src="<%= person.imageUrl %>" alt=""/>
+                        </div>
+                    <% } else { %>
+                        <div class="single-guest__image">
+                            <img src="/assets/images/guest-photo-placeholder.png"/>
+                        </div>
+                    <% } %>
+                    <div class="single-guest__meta">
+                        <div class="single-guest__name"><%= person.name %></div>
+                        <div class="single-guest__title"><%- person.title %></div>
+                        <% if(lastFeatured) { %>
+                        <div class="single-guest__last-featured-title">Last featured on:</div>
+                        <div class="single-guest__last-featured-info"><strong>EPISODE <%= lastFeatured.episodeNumber %>
+                                &#9642; </strong><span style="text-transform: uppercase;"><%= lastFeatured.createdAtMoment.format('MMMM D, YYYY') %></span></div>
+                        <div class="single-guest__last-featured">
+                            <div class="single-guest__last-featured-post-wrapper">
+                                <a class="single-guest__last-featured-post" href="<%= lastFeatured.path %>"><%= lastFeatured.title %></a>
+                            </div>
+                            <div class="single-guest__last-featured-play-button-wrapper">
+                                <a class="single-guest__last-featured-play-button" href="<%= lastFeatured.path %>">
+                                    <i class="icon-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <% } %>
+                    </div>
+                </div>
+                <div class="single-guest__bio"><%- person.bio %></div>
+                <% if(options.articles.featuring.length > 0) { %>
+                    <div class="single-guest__episodes-featuring">All Episodes Featuring <%= person.name %></div>
+                    <%- include('./partials/article/list-compact', { articles: options.articles.featuring }); %>
+                <% } %>
+            </div>
+        </div>
+        <div class="sidebar col-md-12 col-lg-4">
+            <%- include('./partials/sidebar'); %>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<% include ./partials/footer %>
+<!-- End Footer -->
+
+</body>
+</html>

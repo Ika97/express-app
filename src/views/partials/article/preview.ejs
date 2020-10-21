@@ -1,0 +1,30 @@
+<div class="article preview">
+    <div class="article-title">
+        <a href="/episodes/<%= article.slug %>/"><%= article.title %></a>
+    </div>
+    <% if(article.people) { %>
+        <div class="container byline-container no-gutters">
+            <div class="row no-gutters">
+                <div class="col">
+                    <div class="article-byline">
+                        <div class="first-line">
+                            <span class="marker"></span>
+                            By <span class="author"><%- article.people[0] %></span>
+                        </div>
+                        <div class="second-line">
+                            <span class="date"><%= article.createdAtMoment.format('dddd, MMMM D, YYYY'); %></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <% } else { %>
+        <div>NO PEOPLE</div>
+    <% } %>
+    <div class="article-content text-content" style="max-height: 400px; overflow: hidden">
+        <%- article.content %>
+    </div>
+    <div class="article-continue">
+        <a href="/episodes/<%= article.slug %>/">Click Here to Continue Reading</a>
+    </div>
+</div>

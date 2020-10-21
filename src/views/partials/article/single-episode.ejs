@@ -1,0 +1,23 @@
+<div class="single-episode">
+    <div class="single-episode__meta clearfix">
+        <% if (episode.hasCategory('episode') && episode.episodeNumber && episode.episodeNumber > 0) { %>
+            <div class="single-episode__number episode-bar__tag">Episode <%= episode.episodeNumber %></div>
+        <% } %>
+        <div class="single-episode__date"><%= episode.createdAtMoment.format('MMM D, YYYY') %></div>
+    </div>
+    <div class="single-episode__heading">
+        <div class="single-episode__title">
+            <a class="single-episode__link" href="<%= episode.path %>"><%= episode.title %></a>
+        </div>
+        <% if (episode.playerEmbed) { %>
+            <div class="single-episode__button">
+                <a href="<%= episode.path %>" class="listen-button">
+                    <i class="icon-play"></i><span class="listen-button__text">Listen here</span>
+                </a>
+            </div>
+        <% } %>
+    </div>
+    <% if (episode.mappedPeople && episode.mappedPeople.length > 0) { %>
+        <div class="single-episode__featuring">FEATURING: <%- getFeaturedPeopleList(episode.mappedPeople) %></div>
+    <% } %>
+</div>

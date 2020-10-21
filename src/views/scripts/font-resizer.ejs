@@ -1,0 +1,37 @@
+<script>
+    $(document).ready(function () {
+        var fontSizeConfig = {
+            min: 16,
+            max: 20
+        };
+
+        var currentFontSize = +SR.Cookies.readCookie('fontSize');
+
+        if (currentFontSize) {
+            setContentFontSize(currentFontSize);
+        } else {
+            currentFontSize = 18;
+            SR.Cookies.createCookie('fontSize', currentFontSize, 2000);
+        }
+
+        function increaseFontSize() {
+            if (currentFontSize + 1 <= fontSizeConfig.max) {
+                currentFontSize += 1;
+                SR.Cookies.createCookie('fontSize', currentFontSize, 2000);
+                setContentFontSize(currentFontSize);
+            } else {
+                currentFontSize = fontSizeConfig.min;
+                SR.Cookies.createCookie('fontSize', currentFontSize, 2000);
+                setContentFontSize(currentFontSize);
+            }
+        }
+
+        $("#increase,#decrease").click(function () {
+            increaseFontSize();
+        });
+
+        function setContentFontSize(currentFontSize) {
+            $(".article-content").css({"fontSize": currentFontSize + 'px'});
+        }
+    });
+</script>

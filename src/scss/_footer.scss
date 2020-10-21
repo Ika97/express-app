@@ -1,0 +1,455 @@
+@import "article/variables";
+
+.footer {
+  color: $white;
+  font: $page-base-font;
+
+  .footer-main {
+    background-color: #003766;
+    box-shadow: inset 0 1px 0 0 #CCCCCC;
+    padding: 37px 0;
+    height: 260px;
+
+    @include bp-medium {
+      height: 460px;
+    }
+
+    @include bp-prexsmall {
+      height: 760px;
+    }
+
+    &__navigation-container {
+      width: percentage(381/1220);
+      display: inline-block;
+      float: left;
+
+      @include bp-xlarge {
+        width: percentage(381/1220);
+        margin-left: percentage(15/1220);
+      }
+
+      @include bp-medium {
+        width: percentage(620/1220);
+        margin-left: percentage(90/1220);
+      }
+
+      @include bp-small {
+        margin-left: percentage(30/1220);
+        width: percentage(680/1220);
+      }
+
+      @include bp-prexsmall {
+        width: percentage(1160/1220);
+      }
+    }
+
+    &__navigation {
+      font-size: 20px;
+      line-height: 23px;
+      letter-spacing: -.05px;
+
+      @media only screen and (max-width: 1230px) {
+        font-size: 17px;
+      }
+
+      &_logo {
+        width: percentage(250/381);
+        display: block;
+      }
+
+      &__list {
+        margin-top: 24px;
+        display: inline-block;
+        width: 100%;
+
+        @include bp-small {
+          margin-top: 1px;
+        }
+      }
+
+      &__list-item {
+        box-shadow: inset 1px 0 0 0 #F59122;
+        display: inline-block;
+        margin-left: percentage(9/381);
+        padding-left: percentage(9/381);
+        float: left;
+
+        @include bp-large {
+          margin-left: percentage(15/381);
+          padding-left: percentage(15/381);
+        }
+
+        @include bp-small {
+          width: 100%;
+          box-shadow: none;
+          margin: 0;
+          padding: 0;
+        }
+
+        @include bp-prexsmall {
+          width: auto;
+          box-shadow: inset 1px 0 0 0 #F59122;
+          margin-left: percentage(9/381);
+          padding-left: percentage(9/381);
+        }
+
+        a {
+          color: inherit;
+
+          &:hover {
+            text-decoration: none;
+            color: rgba(255, 255, 255, .7);
+          }
+        }
+
+        &:first-child {
+          box-shadow: none;
+          margin-left: 0;
+          padding-left: 0;
+        }
+      }
+    }
+
+    &__listen-on-container {
+      width: percentage(150/1220);
+      margin-left: percentage(87/1220);
+      display: inline-block;
+      float: left;
+
+      @include bp-xlarge {
+        margin-left: percentage(62/1220);
+      }
+
+      @include bp-medium {
+        width: percentage(390/1220);
+        margin-left: percentage(90/1220);
+      }
+
+      @include bp-prexsmall {
+        margin-left: percentage(30/1220);
+        width: percentage(1160/1220);
+        margin-top: 20px;
+      }
+    }
+
+    &__listen-on {
+      &__title {
+        font-weight: 800;
+        line-height: 20px;
+        text-transform: uppercase;
+
+        @include bp-min-medium-limit {
+          font-weight: 600;
+        }
+      }
+
+      &__list {
+        font-size: 17px;
+        line-height: 21px;
+        letter-spacing: -0.05px;
+
+        @include bp-min-medium-limit {
+          font-size: 14px;
+        }
+      }
+
+      &__list-item {
+        margin-top: 12px;
+
+        &__theme {
+          &_apple {
+            i {
+              color: $gray-41;
+            }
+          }
+          &_android {
+            i {
+              color: #A4C639;
+            }
+          }
+          &_spotify {
+            i {
+              color: #1DB954;
+            }
+          }
+        }
+
+        &__icon {
+          width: 19px;
+          margin-right: 6px;
+          margin-left: -2px;
+        }
+
+        i {
+          margin-right: 8px;
+        }
+
+        a {
+          color: inherit;
+
+          &:hover {
+            text-decoration: none;
+            color: rgba(255, 255, 255, .7);
+          }
+        }
+      }
+    }
+
+    &__connect-on-container {
+      width: percentage(118/1220);
+      margin-left: percentage(60/1220);
+      display: inline-block;
+      float: left;
+
+      @include bp-xlarge {
+        margin-left: percentage(55/1220);
+      }
+
+      @include bp-medium {
+        width: percentage(250/1220);
+        margin-left: percentage(90/1220);
+        margin-top: 20px;
+      }
+
+      @include bp-small {
+        width: percentage(310/1220);
+        margin-left: percentage(30/1220);
+      }
+
+      @include bp-prexsmall {
+        width: percentage(1160/1220);
+      }
+    }
+
+    &__connect-on {
+      &__title {
+        font-weight: 800;
+        line-height: 20px;
+        text-transform: uppercase;
+
+        @include bp-min-medium-limit {
+          font-weight: 600;
+          font-size: 15px;
+        }
+      }
+
+      &__list {
+        font-size: 17px;
+        line-height: 21px;
+        letter-spacing: -0.05px;
+
+        @include bp-min-medium-limit {
+          font-size: 13px;
+        }
+      }
+
+      &__list-item {
+        margin-top: 12px;
+        display: inline-block;
+        width: 100%;
+
+        &__text {
+          float: left;
+          padding-top: 7px;
+          color: $white;
+        }
+
+        i {
+          color: $white;
+          font-size: 18px;
+          padding: 9px;
+          background: #F59122;
+          border-radius: 18px;
+          box-shadow: inset 0 -1px 0 0 rgba(0,0,0,0.5);
+          margin-right: 8px;
+          display: inline-block;
+          float: left;
+
+          @include bp-min-medium-limit {
+            font-size: 14px;
+            border-radius: 16px;
+            margin-right: 6px;
+          }
+
+          &.icon-facebook {
+            padding: 9px 12px;
+          }
+        }
+
+        &:first-child {
+          margin-top: 14px;
+        }
+
+        &:hover {
+          i {
+            color: rgba(255, 255, 255, .7);
+          }
+
+          .footer-main__connect-on__list-item__text {
+            color: rgba(255, 255, 255, .7);
+          }
+        }
+      }
+    }
+
+    &__subscription-box-container {
+      width: percentage(360/1220);
+      margin-left: percentage(64/1220);
+      display: inline-block;
+      float: left;
+
+      @include bp-medium {
+        width: percentage(700/1220);
+        margin-left: percentage(90/1220);
+        margin-top: 20px;
+      }
+
+      @include bp-small {
+        width: percentage(790/1220);
+        margin-left: percentage(60/1220);
+      }
+
+      @include bp-prexsmall {
+        margin-left: percentage(30/1220);
+        width: percentage(1160/1220);
+      }
+    }
+
+    &__subscription-box {
+      padding-left: percentage(90/1220);
+      border-left: 1px solid $gray-300;
+
+      @include bp-prexsmall {
+        padding-left: 0;
+        border-left: none;
+      }
+
+      &__title {
+        position: relative;
+
+        &__text {
+          display: inline-block;
+          font: 700 20px/24px "Proxima Nova W01";
+          letter-spacing: -.05px;
+
+          @include bp-max-large {
+            font-size: 17px;
+            width: 85%;
+          }
+
+          @include bp-small {
+            font-size: 15px;
+          }
+        }
+
+        i {
+          position: absolute;
+          right: 0;
+          top: 0;
+          font-size: 46px;
+          opacity: .5;
+        }
+      }
+
+      &__content {
+        font: 400 16px/22px "Proxima Nova W01";
+        margin-top: 8px;
+
+        @include bp-max-large {
+          width: 90%;
+        }
+      }
+
+      &__input {
+        margin-top: 20px;
+
+        button {
+          color: $white;
+          font: 700 14px/18px "Proxima Nova W01";
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .footer-disclaimer {
+    padding: 30px 0;
+    background-color: #022a4c;
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, .1);
+    height: 200px;
+    font: 400 14px/20px "Proxima Nova W01";
+
+    @include bp-medium {
+      height: 250px;
+    }
+
+    @include bp-small {
+      height: 280px;
+    }
+
+    @include bp-prexsmall {
+      height: 320px;
+    }
+
+    &__link {
+      position: relative;
+      color: $white;
+      text-decoration: underline;
+      padding-left: 10px;
+      margin-left: 10px;
+
+      &:first-child {
+        padding: 0;
+        margin: 0;
+
+        &:before {
+          display: none;
+        }
+
+        @include bp-medium {
+          margin-left: percentage(90/1220);
+        }
+
+        @include bp-small {
+          margin-left: percentage(30/1220);
+        }
+      }
+
+      &:before {
+        content: "";
+        display: block;
+        z-index: 1;
+        position: absolute;
+        height: 12px;
+        width: 1px;
+        background: rgba(255, 255, 255, .6);
+        top: 50%;
+        margin-top: -6px;
+        left: -1px;
+      }
+
+      &:hover {
+        text-decoration: none;
+        color: rgba(255, 255, 255, .7);
+      }
+    }
+
+    &__text {
+      margin-top: 20px;
+      margin-bottom: 0;
+      color: rgba(255, 255, 255, .6);
+
+      @include bp-medium {
+        margin-left: percentage(90/1220);
+        width: percentage(1040/1220);
+      }
+
+      @include bp-small {
+        margin-left: percentage(30/1220);
+        width: percentage(1160/1220);
+      }
+    }
+  }
+
+  @include clearfix;
+}
